@@ -1,0 +1,197 @@
+[Mon Apr 15 23:31:49 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/client
+[Mon Apr 15 23:31:49 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:31:50 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/client
+[Mon Apr 15 23:31:50 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:31:51 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/client
+[Mon Apr 15 23:31:51 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:31:56 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:32:28 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/map, referer: http://eliza.dem1k/
+[Mon Apr 15 23:32:28 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:51:53 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:53:02 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/\xd1\x86\xd1\x83\xd0\xb4\xd1\x81\xd1\x89\xd1\x8c\xd1\x83
+[Mon Apr 15 23:53:02 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:53:09 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/welcome
+[Mon Apr 15 23:53:09 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:53:12 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/welcome
+[Mon Apr 15 23:53:12 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:54:00 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Mon Apr 15 23:56:15 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 09:24:10 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 09:24:11 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/map, referer: http://eliza.dem1k/
+[Tue Apr 16 09:24:11 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 09:24:13 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 09:24:26 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 09:24:49 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 21:18:44 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/map, referer: http://eliza.dem1k/
+[Tue Apr 16 21:18:44 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 21:18:47 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/collection, referer: http://eliza.dem1k/
+[Tue Apr 16 21:18:47 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 21:18:48 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/collection, referer: http://eliza.dem1k/
+[Tue Apr 16 21:18:48 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 21:19:51 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/collection, referer: http://eliza.dem1k/
+[Tue Apr 16 21:19:51 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 21:19:52 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/collection, referer: http://eliza.dem1k/
+[Tue Apr 16 21:19:52 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 21:19:54 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Tue Apr 16 21:19:56 2013] [error] [client 127.0.0.1] File does not exist: /home/dem1k/web/eliza/favicon.ico
+[Sun Apr 21 23:19:55 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/dem1k/web/eliza/images/stripe.jpg, referer: http://eliza.dem1k/
+[Sun Apr 21 23:20:08 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/dem1k/web/eliza/images/stripe.jpg, referer: http://eliza.dem1k/
+[Sun Apr 21 23:20:09 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/dem1k/web/eliza/images/stripe.jpg, referer: http://eliza.dem1k/
+[Sun Apr 21 23:21:17 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/dem1k/web/eliza/images/stripe.jpg, referer: http://eliza.dem1k/
+[Sun Apr 21 23:21:19 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/dem1k/web/eliza/images/stripe.jpg, referer: http://eliza.dem1k/
+[Sun Apr 21 23:21:20 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/dem1k/web/eliza/images/stripe.jpg, referer: http://eliza.dem1k/
+[Sun Apr 21 23:21:20 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/dem1k/web/eliza/images/stripe.jpg, referer: http://eliza.dem1k/
+[Mon Apr 29 01:41:56 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/article/contacts
+[Mon Apr 29 01:42:11 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/article/contacts
+[Mon Apr 29 01:42:12 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/article/contacts
+[Mon Apr 29 01:43:44 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/article/contacts
+[Mon Apr 29 02:24:17 2013] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Controller' not found in /home/dem1k/web/eliza/application/controllers/client/articles.php on line 2, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:17 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:17 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:17 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:17 2013] [error] [client 127.0.0.1] PHP   3. include() /home/dem1k/web/eliza/system/core/CodeIgniter.php:250, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:24 2013] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Controller' not found in /home/dem1k/web/eliza/application/controllers/client/articles.php on line 2
+[Mon Apr 29 02:24:24 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Apr 29 02:24:24 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Mon Apr 29 02:24:24 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Mon Apr 29 02:24:24 2013] [error] [client 127.0.0.1] PHP   3. include() /home/dem1k/web/eliza/system/core/CodeIgniter.php:250
+[Mon Apr 29 02:24:35 2013] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Controller' not found in /home/dem1k/web/eliza/application/controllers/client/articles.php on line 2, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:35 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:35 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:35 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:35 2013] [error] [client 127.0.0.1] PHP   3. include() /home/dem1k/web/eliza/system/core/CodeIgniter.php:250, referer: http://eliza.dem1k/collection
+[Mon Apr 29 02:24:39 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/article/
+[Tue May 07 23:30:09 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/article/
+[Sat May 11 00:34:12 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:35:54 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:36:56 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:37:28 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:37:30 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:38:37 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:39:14 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:39:15 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 00:39:26 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/howto_order
+[Sat May 11 01:18:37 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:18:46 2013] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Controller' not found in /home/dem1k/web/eliza/application/controllers/client/articles.php on line 2, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:18:46 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:18:46 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:18:46 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:18:46 2013] [error] [client 127.0.0.1] PHP   3. include() /home/dem1k/web/eliza/system/core/CodeIgniter.php:250, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:22:55 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getBasket() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 51, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:22:55 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:22:55 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:22:55 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:22:55 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:22:55 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:23:48 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 55, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:23:48 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:23:48 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:23:48 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:23:48 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:23:48 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:26:26 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 55, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:26:26 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:26:26 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:26:26 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:26:26 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:26:26 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:37 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 55, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:37 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:37 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:37 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:37 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:37 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 55, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 55, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:38 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:39 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 55, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:39 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:39 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:39 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:39 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:27:39 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:20 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 56, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:20 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:20 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:20 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:20 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:20 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:21 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 56, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:21 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:21 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:21 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:21 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:21 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:22 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 56, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:22 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:22 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:22 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:22 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:28:22 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:21 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 56, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:21 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:21 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:21 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:21 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:21 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:22 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/client/article.php on line 56, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:22 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:22 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:22 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:22 2013] [error] [client 127.0.0.1] PHP   3. call_user_func_array() /home/dem1k/web/eliza/system/core/CodeIgniter.php:359, referer: http://eliza.dem1k/contacts
+[Sat May 11 01:29:22 2013] [error] [client 127.0.0.1] PHP   4. Article->articles_list() /home/dem1k/web/eliza/system/core/CodeIgniter.php:0, referer: http://eliza.dem1k/contacts
+[Sat May 11 13:47:20 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/admin/collection.php on line 16
+[Sat May 11 13:47:20 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Sat May 11 13:47:20 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Sat May 11 13:47:20 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Sat May 11 13:47:20 2013] [error] [client 127.0.0.1] PHP   3. Collection->_remap() /home/dem1k/web/eliza/system/core/CodeIgniter.php:325
+[Sat May 11 13:47:20 2013] [error] [client 127.0.0.1] PHP   4. Collection->index() /home/dem1k/web/eliza/application/controllers/admin/collection.php:106
+[Sat May 11 13:47:24 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/admin/collection.php on line 16
+[Sat May 11 13:47:24 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Sat May 11 13:47:24 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Sat May 11 13:47:24 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Sat May 11 13:47:24 2013] [error] [client 127.0.0.1] PHP   3. Collection->_remap() /home/dem1k/web/eliza/system/core/CodeIgniter.php:325
+[Sat May 11 13:47:24 2013] [error] [client 127.0.0.1] PHP   4. Collection->index() /home/dem1k/web/eliza/application/controllers/admin/collection.php:106
+[Sat May 11 13:49:53 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/admin/collection.php on line 16
+[Sat May 11 13:49:53 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Sat May 11 13:49:53 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Sat May 11 13:49:53 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Sat May 11 13:49:53 2013] [error] [client 127.0.0.1] PHP   3. Collection->_remap() /home/dem1k/web/eliza/system/core/CodeIgniter.php:325
+[Sat May 11 13:49:53 2013] [error] [client 127.0.0.1] PHP   4. Collection->index() /home/dem1k/web/eliza/application/controllers/admin/collection.php:106
+[Sat May 11 13:49:55 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/admin/collection.php on line 16
+[Sat May 11 13:49:55 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Sat May 11 13:49:55 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Sat May 11 13:49:55 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Sat May 11 13:49:55 2013] [error] [client 127.0.0.1] PHP   3. Collection->_remap() /home/dem1k/web/eliza/system/core/CodeIgniter.php:325
+[Sat May 11 13:49:55 2013] [error] [client 127.0.0.1] PHP   4. Collection->index() /home/dem1k/web/eliza/application/controllers/admin/collection.php:106
+[Sat May 11 13:52:11 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/admin/collection.php on line 16
+[Sat May 11 13:52:11 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Sat May 11 13:52:11 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Sat May 11 13:52:11 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Sat May 11 13:52:11 2013] [error] [client 127.0.0.1] PHP   3. Collection->_remap() /home/dem1k/web/eliza/system/core/CodeIgniter.php:325
+[Sat May 11 13:52:11 2013] [error] [client 127.0.0.1] PHP   4. Collection->index() /home/dem1k/web/eliza/application/controllers/admin/collection.php:106
+[Sat May 11 13:52:12 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/admin/collection.php on line 16
+[Sat May 11 13:52:12 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Sat May 11 13:52:12 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Sat May 11 13:52:12 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Sat May 11 13:52:12 2013] [error] [client 127.0.0.1] PHP   3. Collection->_remap() /home/dem1k/web/eliza/system/core/CodeIgniter.php:325
+[Sat May 11 13:52:12 2013] [error] [client 127.0.0.1] PHP   4. Collection->index() /home/dem1k/web/eliza/application/controllers/admin/collection.php:106
+[Sat May 11 13:52:13 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/dem1k/web/eliza/application/controllers/admin/collection.php on line 16
+[Sat May 11 13:52:13 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Sat May 11 13:52:13 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/dem1k/web/eliza/index.php:0
+[Sat May 11 13:52:13 2013] [error] [client 127.0.0.1] PHP   2. require_once() /home/dem1k/web/eliza/index.php:201
+[Sat May 11 13:52:13 2013] [error] [client 127.0.0.1] PHP   3. Collection->_remap() /home/dem1k/web/eliza/system/core/CodeIgniter.php:325
+[Sat May 11 13:52:13 2013] [error] [client 127.0.0.1] PHP   4. Collection->index() /home/dem1k/web/eliza/application/controllers/admin/collection.php:106
+[Sat May 11 14:30:10 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/articles/, referer: http://eliza.dem1k/contacts
+[Sat May 11 20:30:00 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/products/, referer: http://eliza.dem1k/product/256
+[Sat May 11 20:31:24 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/products/, referer: http://eliza.dem1k/product/256
+[Sat May 11 21:08:06 2013] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/dem1k/web/eliza/uploads/products/, referer: http://eliza.dem1k/product/256

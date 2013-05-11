@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+        <title>Обручалочка</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.selectBox.js"></script>
+        <script type="text/javascript" src="js/custom-form-elements.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrap_header">
+            <div class="header">
+                <div class="top_header">
+                    <div class="left_header">
+                        <strong class="logo"><a href="index.html">Обручалочка</a></strong>
+                        <div class="hot_line">
+                            <span>Телефон горячей линии</span>
+                            <strong>+38 (050) 880-80-20</strong>
+                        </div>
+                    </div>
+                    <div class="right_header">
+                        <form class="forma_search" action="#">
+                            <fieldset>
+                                <input class="input_search" type="text" value="Поиск по артикулу" title="Поиск по артикулу"/>
+                                <input class="button_search" type="submit" value="Найти"/>
+                            </fieldset>
+                        </form>
+                        <a href="#" class="arrival">Войти</a>
+                    </div>
+                </div>
+                <div class="bottom_header">
+                    <div class="left_header">
+                        <div class="main_menu">
+                            <ul>
+                                <li><a class="collection" href="#">Коллекция</a></li>
+                                <li><a href="#">Магазины</a></li>
+                                <li><a href="#">Новинки</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Статьи</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right_header">
+                        <ul>
+                            <li><a href="#">Список желаний&nbsp;(<span>2</span>)</a></li>
+                            <li><a class="no_background" href="#">Корзина&nbsp;(<span>1</span>)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper registration">
+            <div class="top_bg_article">
+                <div class="btm_bg_article">
+                    <div class="show_ring static checkout_page">
+                        <a href="#" class="btn_close" title="Закрыть">Закрыть</a>
+                        <form action="#">
+                            <fieldset>
+                                <div class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="#">Главная</a><span></span></li>
+                                        <li>Мне понравилось<span></span></li>
+                                        <li>Оформление заказа</li>
+                                    </ul>
+                                </div>
+                                <p>Если Вы зарегистрированы, <a href="#" class="blue_link">войдите в систему</a>, это ускорит оформление заказа.</p>
+                                <p class="head_checkout">Оформление заказа</p>
+                                <div class="left_part">
+                                    <div class="element">
+                                        <label for="name_recipient">Имя получателя</label>
+                                        <input type="text" id="name_recipient" name="name_recipient" value=""/>
+                                    </div>
+                                    <div class="element">
+                                        <label for="number_phone">Телефон</label>
+                                        <input type="text" id="number_phone" class="small_input" name="number_phone" value=""/>
+                                        <div class="wrap_sel">
+                                            <select name="type_phone" id="type_phone">
+                                                <option value="1">мобильный</option>
+                                                <option value="2">городской</option>
+                                            </select>
+                                        </div>
+                                        <em class="example">Например, 068 999 99 99</em>
+                                    </div>
+                                    <div class="element big_label">
+                                        <label for="your_city">Город, в котором Вы<br/>находитесь</label>
+                                        <div class="city_sel">
+                                            <select name="your_city" id="your_city">
+                                                <option value="1">Харьков</option>
+                                                <option value="2">Киев</option>
+                                                <option value="3">Донецк</option>
+                                                <option value="4">Одесса</option>
+                                                <option value="5">Запорожье</option>
+                                                <option value="6">Львов</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="element">
+                                        <label for="email">Электронная почта:</label>
+                                        <input type="text" id="email" name="email" value="123456789@gmail.com" title="123456789@gmail.com"/>
+                                    </div>
+                                    <div class="check_element deals_check">
+                                        <input type="checkbox" checked="checked" class="styled" name="deals" id="deals"/>
+                                        <label for="deals">Хочу узнавать о спецпредложениях</label>
+                                    </div>
+                                    <a href="#" class="add_comments">Добавить комментарий к заказу</a>
+                                    <div class="buttons">
+                                        <input class="btn_reg btn_ok float_left" type="submit" value="Заказ подтверждаю"/>
+                                        <p class="license_agreement">Подтверждая заказ, я соглашаюсь<br/>с <a href="#">пользовательским соглашением</a></p>
+                                    </div>
+                                </div>
+                                <div class="right_part_order">
+                                    <p class="head_checkout">Мой заказ</p>
+                                   <div class="scroll_block">
+                                         <div class="block_foto">
+                                            <a href="#" class="arrow_order"></a>
+                                            <div class="foto_ring_order">
+                                                <img src="images/small_ring1.png" alt="" />
+                                            </div>
+                                            <div class="descript_ring">
+                                                <strong class="head_articul">K 211 22 11</strong>
+                                                <p><strong>вес:</strong> 3,0 г</p>
+                                                <p><strong>вставка:</strong> цирконий</p>
+                                                <p><strong>вес вставки:</strong> 0,3 г</p>
+                                            </div>
+                                        </div>
+                                            <p class="head_checkout">пара</p>
+                                    </div>
+                                    <div class="promo_kod">
+                                        <a href="#">Добавить промо-код</a>
+                                    </div>
+                                    <div class="edit_order">
+                                        <a href="#">Редактировать</a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_footer">
+            <div class="footer">
+                <div class="top_footer">
+                    <div class="rss_news">
+                        <h3>Рассылка новостей</h3>
+                        <form action="#">
+                            <fieldset>
+                                <label for="email">Оставьте Ваш e-mail и <br/>подпишитесь на рассылку</label>
+                                <input class="input_email" type="text" name="email" title="Ваш e-mail" value="Ваш e-mail"/>
+                                <input class="btn_ok" type="submit" value="OK"/>
+                            </fieldset>
+                        </form>
+                        <div class="icon_net">
+                            <ul>
+                                <li class="vkontakte"><a href="#">Наша группа Вконтакте</a></li>
+                                <li class="facebook"><a href="#">Обручалочка на Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_menu">
+                        <h3>Дисконтная программа</h3>
+                        <ul>
+                            <li><a href="#">Дисконт в подарок</a></li>
+                            <li><a href="#">Подарочная карта</a></li>
+                            <li><a href="#">Условия дисконтной программы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_menu">
+                        <h3>Статьи о кольцах</h3>
+                        <ul>
+                            <li><a href="#">Как выбрать кольцо</a></li>
+                            <li><a href="#">Тенденции ювелирной моды</a></li>
+                            <li><a href="#">Уход за изделиями из золота</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_menu">
+                        <h3>Каталог</h3>
+                        <a href="#"><img class="f_catalog" src="images/f_catalog.png" alt="" /></a>
+                    </div>
+                    <div class="footer_menu">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a href="#">Представленные бренды</a></li>
+                            <li><a href="#">Магазины сети</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left_footer">
+                    <span class="copyright">&copy; 2011 «Обручалочка»</span>
+                    <span class="f_phone">+38 (050) 880-80-20</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

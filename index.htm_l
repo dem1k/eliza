@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Название сайта</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+<link rel="stylesheet" href="style.css" type="text/css" charset="windows-1251" />
+</head>
+<body>
+<div class="width=100% height=100% align-left"></div><div class="width=100% height=100% align-left"></div><div class="align-left"></div><div  style="display:none;"><a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#115;&#101;&#120;&#109;&#97;&#109;&#98;&#97;.&#114;&#117;">&#1079;&#1085;&#1072;&#1082;&#1086;&#1084;&#1089;&#1090;&#1074;&#1072;</a> <!-- div --><!-- div end --> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#116;&#117;&#116;&#108;&#111;&#118;&#101;.&#114;&#117;">&#1089;&#1077;&#1082;&#1089;</a> <!-- div --><!-- div end --> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#117;&#110;&#105;&#115;&#104;&#97;&#98;&#108;&#111;&#110;.&#99;&#111;&#109;">html php</a> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#97;&#109;&#117;&#114;&#112;&#108;&#97;&#110;&#101;&#116;.&#114;&#117;">&#1089;&#1072;&#1081;&#1090; &#1079;&#1085;&#1072;&#1082;&#1086;&#1084;&#1089;&#1090;&#1074;</a> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#109;&#109;&#109;&#99;&#101;&#110;&#116;&#114;.&#99;&#111;&#109;">&#1052;&#1052;&#1052;-&#50;&#48;&#49;&#49;</a></div><div class="padding valign-image-left"></div><div class="padding  valign-image-right"></div><div class="padding valign-image-center"></div>
+<div id="wrapper">
+  <div id="header">
+    <h1><img src="images/logo.jpg" width="172" height="45" alt="Charity Trust"></h1>
+    <div id="nav"> <a href="#"><img src="images/m1.jpg" width="66" height="41" alt="M1"></a> <a href="#"><img src="images/m2.jpg" width="87" height="41" alt="M2"></a> <a href="#"><img src="images/m3.jpg" width="83" height="41" alt="M3"></a> <a href="#"><img src="images/m4.jpg" width="72" height="41" alt="M4"></a> <a href="#"><img src="images/m5.jpg" width="84" height="41" alt="M5"></a> <a href="#"><img src="images/m6.jpg" width="64" height="41" alt="M6"></a> <a href="#"><img src="images/m7.jpg" width="89" height="41" alt="M7"></a> <a href="#"><img src="images/m8.jpg" width="89" height="41" alt="M8"></a> </div>
+  </div>
+  <div id="headline">
+    <div id="photo">
+      <div> <img src="images/pic_1.jpg" width="618" height="254" alt="Pic 1"> </div>
+    </div>
+    <div id="search-news">
+     
+      <h2 class="downcast">News &amp; Events</h2>
+      <div id="news-box">
+        <h3><a href="#">05.12.2010</a></h3>
+        <p><a href="#">Lorem ipsum dolor</a> sit amet, consectetuer adipiscing elit.</p>
+        <p class="more"><a href="#">more</a></p>
+        <h3><a href="#">01.12.2010</a></h3>
+        <p><a href="#">Lorem ipsum dolor</a> sit amet, consectetuer adipiscing elit.</p>
+        <p class="more"><a href="#">more</a></p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="body">
+    <div id="body-left">
+      <h2><img src="images/h_welcome_to_our_site.gif" width="203" height="20" alt="H Welcome To Our Site" /></h2>
+      <p>Don't forgot to check free website templates every day, because we add at least one free website template daily.</p>
+      <p>This is a template designed by free website templates for you for free you can replace all the text by your own 
+        text. This is just a place holder so you can see how the site would look like.</p>
+      <p>You can remove any link to our websites from this template you're  free to use the template without linking 
+        back to us. Don't want your boss to know you used a free website template ;) .</p>
+      <p>If you're having problems editing the template please don't hesitate to ask for help on the forum.</p>
+      <p>If you're looking for beautiful and professionally made templates you can find them at Template Beauty.com.</p>
+      <p>Even more websites all about website templates on Just Web Templates.</p>
+      <p class="more"><a href="#">more</a></p>
+      <h2><img src="images/h_needs.gif" width="150" height="20" alt="Urgent Needs"></h2>
+      <img src="images/pic_3.jpg" width="172" height="92" alt="Pic 3" class="left" />
+      <p><a href="#">Lorem ipsum dolor</a> sit amet, consectetuer adipiscing elit. Mauris ut elit. Sed eu pede. Morbi quis ante a pede feugiat egestas. Etiam feugiat mi in pede. Aenean massa sem.</p>
+      <ul class="plussbullets">
+        <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing</a></li>
+        <li><a href="#">Elit. Mauris ut elit. Sed eu pede. Morbi quis ante a</a></li>
+        <li><a href="#">Pede feugiat egestas. Etiam feugiat mi in pede. Aenean massa sem.</a></li>
+      </ul>
+    </div>
+    <div id="body-right">
+      <h2><img src="images/h_donations_for_us.gif" width="151" height="20" alt="Donations For Us"></h2>
+      <p><img src="images/pic_2.jpg" width="321" height="93" alt="Pic 2"></p>
+      <p>If you're looking for beautiful and professionally made templates you can find them at Template Beauty.com.</p>
+      <p>Even more websites all about website templates on Just Web Templates.</p>
+      <p class="more"><a href="#"><img src="images/btn_click_here.gif" width="51" height="19" alt="Btn Click Here"></a></p>
+      <h2><img src="images/h_gallery.gif" width="65" height="22" alt="Gallery"></h2>
+      <div id="gallery"> <a href="#"><img src="images/gal_1.jpg" width="101" height="96" alt="Gal 1"></a> <a href="#"><img src="images/gal_2.jpg" width="114" height="96" alt="Gal 2"></a> <a href="#"><img src="images/gal_3.jpg" width="112" height="96" alt="Gal 3"></a> </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div id="footer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <p> &copy; 2010 Название сайта
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="width=100% height=100% align-left"></div><div class="width=100% height=100% align-left"></div><!-- div style --><div class="align-left" alt=""  height="48" width="1"></div><div class="align-left" alt="" height="64" width="1"></div><div class="align-left" alt="" height="100" width="1"></div><div  class="align-left" alt="" height="100" width="1"></div><div class="align-left" alt="" height="48" width="1"></div><div class="align-left" alt="" height="1"  width="100"></div><div class="align-left"></div><div class="align-center"></div><div class="align-right"></div><div class="align-left" alt="" height="48"  width="1"></div><div class="align-left" alt="" height="48" width="1"></div><div class="align-left" width="1"></div><div class="align-left" width="1"></div> <!-- div style --> <font color=#42453D><!-- div style --> love <a href="http://tutlove.ru/"><font color=#42453D>&#1089;&#1077;&#1082;&#1089;</font></a> &#1089&#1072&#1081&#1090 <a href="http://unishablon.com/"><font color=#42453D>&#1096&#1072&#1073&#1083&#1086&#1085&#1099</font></a> <!-- div end -->
+<!-- div --> ru foto <a href="http://amurplanet.ru/"><font color=#42453D>&#1079;&#1085;&#1072;&#1082;&#1086;&#1084;&#1089;&#1090;&#1074;&#1072;</font></a>
+<!-- div style --><!-- div -->&#1092&#1086&#1090&#1086 <a href="http://sexmamba.ru/"><font  color=#42453D>&#1087;&#1086;&#1088;&#1085;&#1086;</font></a> <a href="http://mmmcentr.com/"><font color=#42453D>ммм-11 </font></a> <div class="width=10% height=1% align-right"></div><div class="width=1% align-left"></div><div class="width=10% align-left"></div></font></body></html>

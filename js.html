@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>
+        Javascript lab
+    </title>
+
+</head>
+<body>
+<h2>Задание :</h2>Составить программу, которая в заданном тексте заменяет одну заданную букву на другую;<br/>
+<label for="inputdata">Введите текст</label>
+<input type="text" id='inputdata'/><br/>
+<label for="serachtext">что заменить</label>
+<input type="text" id='serachtext' size="1" /><br/>
+<label for="replacetext"> на что заменить</label>
+<input type="text" id='replacetext' size="1"/>
+<h2>Решение:</h2>
+<div id='beforclear'></div>
+<div id='answer'></div>
+<button onclick="findandreplace()">Начать</button>
+</body>
+</html>
+<script type="text/javascript">
+    function findandreplace(){
+        var mystring = document.getElementById('inputdata').value;
+        var s_str = document.getElementById('serachtext').value;
+        var r_str = document.getElementById('replacetext').value;
+      var   mynewstring= mystring.replace(new RegExp(s_str,'g'),r_str);
+        document.getElementById('beforclear').innerText='вы ввели:'+mystring;
+        document.getElementById('answer').innerText='измененный текст:'+mynewstring;
+    }
+</script>
