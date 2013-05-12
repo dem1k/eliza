@@ -2,7 +2,7 @@
     <div class="top_bg_article">
         <div class="btm_bg_article">
             <div class="show_ring static basket">
-                <a href="/collection/" class="btn_close" title="Закрыть">Закрыть</a>
+                <a href="/category/" class="btn_close" title="Закрыть">Закрыть</a>
 
                 <form class="basket_form" action="/basket/checkout/" >
                     <fieldset>

@@ -11,14 +11,14 @@
 
 <div id="tabs">
     <ul>
-        <li><a href="#collections" >Коллекции</a></li>
+        <li><a href="#categories" >Коллекции</a></li>
         <li><a href="#classes" >Группы</a></li>
         <li><a href="#brands" >Бренды</a></li>
         <li><a href="#colors" >Цвета</a></li>
         <li><a href="#rocks" >Вставки</a></li>
     </ul>
-    <div id="collections">
-        <a class="button" href="/admin/parametrs/create/collections/">Создать колекцию</a> <br/>
+    <div id="categories">
+        <a class="button" href="/admin/parametrs/create/categories/">Создать колекцию</a> <br/>
         <table width="100%" border="1px solid " cellspacing="0" cellpadding="0">
             <thead>
             <th width="20px">ID</th>
@@ -26,15 +26,15 @@
             <th width="200px">Действие</th>
             </thead>
             <tbody>
-                <?php foreach ($collections as $collection):?>
+                <?php foreach ($categories as $category):?>
                 <tr>
-                    <td><?=$collection['id']?>
+                    <td><?=$category['id']?>
                     </td>
-                    <td><?=$collection['name']?>
+                    <td><?=$category['name']?>
                     </td>
                     <td>
-                        <a href="/admin/parametrs/edit/collections/<?=$collection['id']?>/">Редактировать</a>
-                        <a  onclick="return confirm('Удалить коллекцию с ID=<?=$collection['id']?>')" href="/admin/parametrs/delete/collections/<?=$collection['id']?>/">Удалить</a>
+                        <a href="/admin/parametrs/edit/categories/<?=$category['id']?>/">Редактировать</a>
+                        <a  onclick="return confirm('Удалить коллекцию с ID=<?=$category['id']?>')" href="/admin/parametrs/delete/categories/<?=$category['id']?>/">Удалить</a>
                     </td>
                 </tr>
                 <?endforeach;?>

@@ -7,7 +7,7 @@
 <?=form_open_multipart('admin/product/edit/'.$id);?>
 <!--form action="/admin/product/create" method="post"  -->
 <?=form_error("name","<span class='error'>","</span><br/>")?>
-<?=form_error("collection","<span class='error'>","</span><br/>")?>
+<?=form_error("category","<span class='error'>","</span><br/>")?>
 <? // =form_error("class","<span class='error'>","</span><br/>")?>
 <?=form_error("brand","<span class='error'>","</span><br/>")?>
 <?=form_error("rock","<span class='error'>","</span><br/>")?>
@@ -39,9 +39,9 @@
             Коллекция
         </td>
         <td>
-            <select name="collection">
-                <?php foreach ($collections as $collection):?>
-                <option value="<?=$collection['id']?>"<?= $collection['name']==$product['collection'] ? set_select('collection', $collection['id'],true):set_select('collection', $collection['id'],false)?> > <?=$collection['name']?></option>
+            <select name="category">
+                <?php foreach ($categories as $category):?>
+                <option value="<?=$category['id']?>"<?= $category['name']==$product['category'] ? set_select('category', $category['id'],true):set_select('category', $category['id'],false)?> > <?=$category['name']?></option>
                 <?php endforeach;?>
             </select>
         </td>

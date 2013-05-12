@@ -8,9 +8,6 @@ class Category_art_model extends CI_Model {
                 ->get()
                 ->result_array();
     }
-//    function save($data) {
-//        $this->db->insert('collections',$data);
-//    }
     function getById($id) {
         return $this->db->select('')
                 ->from('category_art')
@@ -23,11 +20,6 @@ class Category_art_model extends CI_Model {
         $this->db->update('category_art', $data);
 
     }
-//    function deleteById($id) {
-//        $this->db->where('id', $id);
-//        $query = $this->db->delete('collections');
-//        return $query;
-//    }
 
 
 

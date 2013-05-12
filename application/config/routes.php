@@ -48,9 +48,9 @@ $route['scaffolding_trigger'] = '';
 //$route['upload'] = 'admin/media/uploadFile';
 //$route['contacts'] = 'client/map/index';
 $route['product/:num'] = 'client/product/index';
-$route['collection'] = 'client/collection/products';
-$route['collection/(\d+)?'] = 'client/collection/products/$1';
-$route['collection/new'] = 'client/collection';
+$route['category'] = 'client/category/products';
+$route['category/(\d+)?'] = 'client/category/products/$1';
+$route['category/new'] = 'client/category';
 $route['search'] = 'client/product/search';
 $route['subscribe'] = 'client/email/subscribe';
 

@@ -6,11 +6,11 @@ class Product_model extends CI_Model
      * @param $collention_id
      * @param int $limit = 3
      */
-    public function getRelatedRings($id,$collection_id, $limit = 3)
+    public function getRelatedRings($id,$category_id, $limit = 3)
     {
         return $this
             ->db->from('products')
-            ->where('collection_id', $collection_id)
+            ->where('category_id', $category_id)
             ->where('id <>',$id)
             ->order_by('fan','random')
             ->limit($limit)->get()->result();
@@ -43,7 +43,7 @@ class Product_model extends CI_Model
             products.new as new,
             products.fan as fan
             ');
-        $q->join("categories", "categories.id = collection_id")
+        $q->join("categories", "categories.id = category_id")
             ->limit($per_page)
             ->offset(($page-1) * $per_page)
         ;
@@ -59,8 +59,8 @@ class Product_model extends CI_Model
 
         if (isset($filetrs['rock']) && $filetrs['rock'])
             $q->where_in('rock_id', $filetrs['rock']);
-        if (isset($filetrs['collection']) && $filetrs['collection'])
-            $q->where_in('collection_id', $filetrs['collection']);
+        if (isset($filetrs['category']) && $filetrs['category'])
+            $q->where_in('category_id', $filetrs['category']);
 if (isset($conditions['sort']))
     if ($conditions['sort'] == 'new') {
         $q->order_by('new','desc');
@@ -89,8 +89,8 @@ if (isset($conditions['sort']))
 
         if (isset($filetrs['rock']) && $filetrs['rock'])
             $q->where_in('rock_id', $filetrs['rock']);
-        if (isset($filetrs['collection']) && $filetrs['collection'])
-            $q->where_in('collection_id', $filetrs['collection']);
+        if (isset($filetrs['category']) && $filetrs['category'])
+            $q->where_in('category_id', $filetrs['category']);
         return
             $q->count_all_results();
 //        var_dump($q->last_query());die;
@@ -108,7 +108,7 @@ if (isset($conditions['sort']))
 
     }
 
-    public function getCollections()
+    public function getCategories()
     {
         return $this->db->select()
             ->from('categories')
@@ -176,13 +176,13 @@ if (isset($conditions['sort']))
         return $this->db->select('
             products.id as id,
             products.name as name,
-            categories.name as collection,
+            categories.name as category,
             classes.name as class,
             brands.name as brand,
             rocks.name as rock,
             colors.name as color,
             products.color1_id,
-            products.collection_id as collection_id,
+            products.category_id as category_id,
             products.artikul,
             products.new,
             products.fan,
@@ -191,7 +191,7 @@ if (isset($conditions['sort']))
             products.image_small,
             ')
             ->from('products')
-            ->join('categories', 'categories.id = products.collection_id', 'LEFT')
+            ->join('categories', 'categories.id = products.category_id', 'LEFT')
             ->join('classes', 'classes.id = products.class_id', 'LEFT')
             ->join('brands', 'brands.id = products.brand_id', 'LEFT')
             ->join('rocks', 'rocks.id = products.rock_id', 'LEFT')
@@ -206,11 +206,11 @@ if (isset($conditions['sort']))
         return $this->db->select('
             products.id as id,
             products.name as name,
-            categories.name as collection,
+            categories.name as category,
             products.image_small,
             ')
             ->from('products')
-            ->join('categories', 'categories.id = products.collection_id', 'LEFT')
+            ->join('categories', 'categories.id = products.category_id', 'LEFT')
             ->join('classes', 'classes.id = products.class_id', 'LEFT')
             ->join('brands', 'brands.id = products.brand_id', 'LEFT')
             ->join('rocks', 'rocks.id = products.rock_id', 'LEFT')

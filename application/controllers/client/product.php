@@ -16,8 +16,8 @@ class Product extends CI_Controller
             $this->data['title'] = 'Обручалочка';
             $this->data['template'] = 'client/product/index';
             $this->data['prod'] = $product= $this->product_model->getById($id);
-            if (!$this->data['prod']) redirect('/collection/');
-            $this->data['related_rings']=$this->product_model->getRelatedRings($id,$product['collection_id'],3);
+            if (!$this->data['prod']) redirect('/category/');
+            $this->data['related_rings']=$this->product_model->getRelatedRings($id,$product['category_id'],3);
 
             $articles_cats = $this->category_art_model->getAll();
             foreach ($articles_cats as $cat) {
@@ -29,7 +29,7 @@ class Product extends CI_Controller
             else
                 $this->load->view('/client/main', $this->data);
         } else {
-            redirect('/collection/');
+            redirect('/category/');
         }
     }
 

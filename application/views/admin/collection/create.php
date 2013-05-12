@@ -1,4 +1,4 @@
-<?=form_open('admin/collection/create');?>
+<?=form_open('admin/category/create');?>
 <h1>Создать новую коллекцию</h1>
 Введите имя новой коллекции <input type="text" name="name" value="<?= set_value('name')?>"/>
 <br/>

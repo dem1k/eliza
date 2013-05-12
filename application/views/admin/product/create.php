@@ -2,7 +2,7 @@
 <script type="text/javascript" src="/assets/admin/js/product.js"></script>
 <?=form_open_multipart('admin/product/create');?>
 <?=form_error("name","<span class='error'>","</span><br/>")?>
-<?=form_error("collection","<span class='error'>","</span><br/>")?>
+<?=form_error("category","<span class='error'>","</span><br/>")?>
 <?=form_error("brand","<span class='error'>","</span><br/>")?>
 <?=form_error("artikul","<span class='error'>","</span><br/>")?>
 <?=form_error("new","<span class='error'>","</span><br/>")?>
@@ -32,12 +32,12 @@
             Коллекция
         </td>
         <td>
-            <select name="collection">
+            <select name="category">
 
-                <?php foreach ($collections as $collection):?>
-                <option value="<?=$collection['id']?>"<?=set_select('collection', $collection['id'])?> > <?=$collection['name']?></option>
+                <?php foreach ($categories as $category):?>
+                <option value="<?=$category['id']?>"<?=set_select('category', $category['id'])?> > <?=$category['name']?></option>
                 <?php endforeach;?>
-                <option value=""<?=set_select('collection', 0,true)?> >не выбрано</option>
+                <option value=""<?=set_select('category', 0,true)?> >не выбрано</option>
             </select>
         </td>
     </tr>

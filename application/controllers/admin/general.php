@@ -9,7 +9,7 @@ class General extends CI_Controller
         $this->data = array();
         $this->data['template'] = 'admin/general/view';
         $this->data['res'] = Null;
-        redirect('/admin/collection');
+        redirect('/admin/category');
         $this->load->view('admin/main', $this->data);
     }
 

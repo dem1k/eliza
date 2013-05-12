@@ -1,4 +1,4 @@
-<?=form_open('admin/collection/edit/'.$id.'/');?>
+<?=form_open('admin/category/edit/'.$id.'/');?>
 <h1>Переименовать коллекцию</h1>
 
 Имя коллекции <input type="text" name="name" value="<?= set_value('name',(isset($name))?$name:'')?>"/>

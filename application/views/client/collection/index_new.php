@@ -3,7 +3,6 @@
         display: none;
     }
 </style>
-<!--<script type="text/javascript" src="/assets/js/collection.js"></script>-->
 <article class="col2">
     <h3 class="pad_top1">Витрина</h3>
 
@@ -16,7 +15,6 @@
     </form>
     <div class="models">
         <div class="show_ring" style="display: none"></div>
-<!--        --><?php //foreach ($pages as $page) echo $page;?>
         <ul class="catalog">
 
             <?php

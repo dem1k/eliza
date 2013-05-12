@@ -1,6 +1,6 @@
 <?php
 
-class Collection extends CI_Controller
+class category extends CI_Controller
 {
     var $data = array();
     var $seo;
@@ -16,7 +16,7 @@ class Collection extends CI_Controller
         $filter['brand'] = $this->input->get('brand');
         $filter['color'] = $this->input->get('color');
         $filter['rock'] = $this->input->get('rock');
-        $filter['collection'] = $this->input->get('collection');
+        $filter['category'] = $this->input->get('category');
         $conditions['search'] = $this->input->get('search');
         $conditions['sort'] = $this->input->get('sort');
         $conditions['active'] = true;
@@ -32,12 +32,12 @@ class Collection extends CI_Controller
         $pager->total_pages = $total_pages;
         $pages = $pager->pages();
         $this->data['pages'] = $pages;
-        $this->data['template'] = 'client/collection/index_new';
+        $this->data['template'] = 'client/category/index_new';
         $this->data['title'] = 'Обручалочка';
         $this->data['brands'] = $this->parametrs_model->getAllByParametr('brands');
         $this->data['colors'] = $this->parametrs_model->getAllByParametr('colors');
         $this->data['rocks'] = $this->parametrs_model->getAllByParametr('rocks');
-        $this->data['collections'] = $this->parametrs_model->getAllByParametr('categories');
+        $this->data['categories'] = $this->parametrs_model->getAllByParametr('categories');
         $articles_cats = $this->category_art_model->getAll();
         foreach ($articles_cats as $cat) {
             $article[$cat['name']] = $this->article_model->getByCatId($cat['id']);

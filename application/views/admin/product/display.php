@@ -36,7 +36,7 @@
             Коллекция
         </td>
         <td>
-            <?=$product['collection']?>
+            <?=$product['category']?>
         </td>
     </tr>
     <tr>

@@ -72,7 +72,6 @@ class Shiping extends Controller {
             redirect('/admin/shiping');
         else {
             $data['template'] = 'admin/shiping/view';
-//            $data['products']=$this->shiping_model->getProductsByCollectionId($id);
         }
         $this->load->view('admin/main', $data);
     }

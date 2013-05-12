@@ -105,7 +105,7 @@ class Auth extends Controller {
         //log the user out
         $logout = $this->ion_auth->logout();
         //redirect them back to the page they came from
-        redirect('/collection/', 'refresh');
+        redirect('/category/', 'refresh');
     }
  public function register_success(){
      $this->data['template']='auth/register_success';

@@ -72,7 +72,6 @@ class Payment extends Controller {
             redirect('/admin/payment');
         else {
             $data['template'] = 'admin/payment/view';
-//            $data['products']=$this->payment_model->getProductsByCollectionId($id);
         }
         $this->load->view('admin/main', $data);
     }

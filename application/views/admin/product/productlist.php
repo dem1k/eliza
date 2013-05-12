@@ -43,7 +43,7 @@
             </td>
             <td><img height="135" src="/uploads/products/<?=$prod->image_big?> " alt="<?php echo $prod->image_big?> "> </img></td>
 
-            <td><?php echo $prod->collection ?></td>
+            <td><?php echo $prod->category ?></td>
             <td>
                 <a href="/admin/product/view/<?php echo $prod->id ?>">Подробно</a>
                 <a href="/admin/product/edit/<?php echo $prod->id ?>">Редактировать</a>

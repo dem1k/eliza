@@ -30,24 +30,16 @@ class Product extends CI_Controller {
         $data['template'] = 'admin/product/create';
         $data['res'] = $this->router->fetch_class().'/create';
         $data['colors']=$this->product_model->getColors();
-        $data['collections']=$this->product_model->getCollections();
-        $data['classes']=$this->product_model->getClasses();
+        $data['categories']=$this->product_model->getCategories();
         $data['brands']=$this->product_model->getbrands();
         $data['rocks']=$this->product_model->getRocks();
         $this->form_validation->set_rules('name', 'Название', 'trim|min_length[2]|xss_clean');
-        $this->form_validation->set_rules('collection', 'Коллекция', 'trim|required|min_length[1]|max_length[2]|numeric|xss_clean');
-//        $this->form_validation->set_rules('class', 'Группа товара', 'trim|numeric|min_length[1]|max_length[2]');
+        $this->form_validation->set_rules('artikul', 'Артикул', 'trim|required|xss_clean|callback_art_check');
+        $this->form_validation->set_rules('category', 'Катигория', 'trim|required|min_length[1]|max_length[2]|numeric|xss_clean');
         $this->form_validation->set_rules('brand', 'бренд', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
-        $this->form_validation->set_rules('color1', 'Цвет бренда ', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
-        $this->form_validation->set_rules('rock', 'Вставка', 'trim|required|numeric|xss_clean|max_length[2]');
-        $this->form_validation->set_rules('artikul', 'муж. артикул', 'trim|required|xss_clean|callback_art_check');
-        $this->form_validation->set_rules('m_weight', 'муж. вес', 'trim|numeric|xss_clean');
-        $this->form_validation->set_rules('f_weight', 'жен. вес', 'trim|numeric|xss_clean');
         $this->form_validation->set_rules('new', 'новинка', 'trim|numeric|xss_clean');
         $this->form_validation->set_rules('fan', 'популярность', 'trim|numeric|xss_clean');
         $this->form_validation->set_rules('description', 'Описание', 'trim|xss_clean|max_length[128]');
-        $this->form_validation->set_rules('image_big', 'картинка', 'trim|xss_clean');
-        $this->form_validation->set_rules('image_small', 'картинка', 'trim|xss_clean');
 
 
         if ($this->input->post('action', '') == 'save')
@@ -57,10 +49,8 @@ class Product extends CI_Controller {
             else {
                 $product=array(
                         'name'=>set_value('name'),
-                        'collection_id'=>set_value('collection'),
-//                        'class_id'=>set_value('class'),
+                        'category_id'=>set_value('category'),
                         'brand_id'=>set_value('brand'),
-                        'rock_id'=>set_value('rock'),
                         'artikul'=>set_value('artikul'),
                         'new'=>set_value('new'),
                         'fan'=>set_value('fan'),
@@ -84,12 +74,12 @@ class Product extends CI_Controller {
             $data['res'] = $this->router->fetch_class();
             $data['product']=$product=$this->product_model->getById($id);
             $data['colors']=$this->product_model->getColors();
-            $data['collections']=$this->product_model->getCollections();
+            $data['categories']=$this->product_model->getCategories();
             $data['classes']=$this->product_model->getClasses();
             $data['brands']=$this->product_model->getbrands();
             $data['rocks']=$this->product_model->getRocks();
             $this->form_validation->set_rules('name', 'Название', 'trim|min_length[2]|xss_clean');
-            $this->form_validation->set_rules('collection', 'Коллекция', 'trim|required|min_length[1]|max_length[2]|numeric|xss_clean');
+            $this->form_validation->set_rules('category', 'Коллекция', 'trim|required|min_length[1]|max_length[2]|numeric|xss_clean');
 //            $this->form_validation->set_rules('class', 'Группа товара', 'trim|required|numeric|min_length[1]|max_length[2]');
             $this->form_validation->set_rules('brand', 'бренд', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
             $this->form_validation->set_rules('rock', 'Вставка', 'trim|required|numeric|xss_clean|max_length[2]');
@@ -106,7 +96,7 @@ class Product extends CI_Controller {
                 else {
                     $product=array(
                             'name'=>set_value('name'),
-                            'collection_id'=>set_value('collection'),
+                            'category_id'=>set_value('category'),
 //                            'class_id'=>set_value('class'),
                             'brand_id'=>set_value('brand'),
                             'rock_id'=>set_value('rock'),

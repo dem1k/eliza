@@ -181,7 +181,6 @@ class Sub_category extends Controller {
             redirect('/admin/sub_category');
         else {
             $data['template'] = 'admin/category/view';
-//            $data['products']=$this->sub_category_model->getProductsByCollectionId($id);
         }
         $this->load->view('admin/main', $data);
     }

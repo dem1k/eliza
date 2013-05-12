@@ -1,5 +1,5 @@
 <?php
-$tab = $res ? $res : "collection";
+$tab = $res ? $res : "category";
 
 //var_dump($res);exit;
 ?>
@@ -7,7 +7,7 @@ $tab = $res ? $res : "collection";
 <div class="column-left">
 
     <ul class="sidebar">
-        <li class="<?= ($tab == "collection") ? "active" : "" ?>"><a href="/admin/collection/">Коллекции</a></li>
+        <li class="<?= ($tab == "category") ? "active" : "" ?>"><a href="/admin/category/">Коллекции</a></li>
         <li class="<?= ($tab == "orders") ? "active" : "" ?>"><a href="/admin/orders/">Заказы</a></li>
         <!--li class="<?=($tab == "startpage") ? "active " : "" ?>"><a href="/admin/startpage">Главная</a></li-->
         <li class="<?= ($tab == "product") ? "active" : "" ?>"><a href="/admin/product/productlist/">Товары</a></li>

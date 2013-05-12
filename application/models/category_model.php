@@ -35,11 +35,11 @@ class Category_model extends CI_Model {
 
 
 
-    function getProductsByCollectionId($id) {
+    function getProductsByCategoryId($id) {
         $q =$this->db
                 ->select('')
                 ->from('products')
-                ->where('collection_id',$id)
+                ->where('category_id',$id)
                 ->get();
         return $q->result_array();
     }
