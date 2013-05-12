@@ -1141,3 +1141,177 @@ a.jqTransformSelectOpen {
     background:url(../images/prev_next.png) 0 -70px no-repeat;
     right: 20px;
 }
+
+/***************************************************************************/
+/*========================show_ring===================*/
+.show_ring{
+    /* IE10 Consumer Preview */
+    background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #4ACBE8 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #4ACBE8 100%);
+
+    /* Opera */
+    background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #4ACBE8 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #4ACBE8));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #4ACBE8 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #4ACBE8 100%);
+    width: 895px;
+    min-height: 485px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    padding: 17px 45px 0 40px;
+}
+.show_ring h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    color: #535252;
+    padding: 5px 0 20px 0;
+}
+.left_part{
+    float: left;
+    width: 360px;
+}
+.in_basket.left{
+    float: left
+}
+.show_ring table{
+    border: 1px solid #d6d8d8;
+    width: 358px;
+}
+.show_ring table tr th{
+    border: 1px solid #d0d0d0;
+    height: 50px;
+    color: #686767;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-left: 40px;
+    background-color: #fff;
+    text-align: left;
+}
+.show_ring table tr td{
+    padding:10px 0 10px 40px;
+    text-align: left;
+    background-color: #fff;
+    border-right: 1px solid #d0d0d0;
+}
+.show_ring table .tables_link a{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.show_ring table .tables_link td{
+    text-align: center;
+    padding:15px 0 30px 0;
+}
+.buttons{
+    padding: 35px 22px;
+    overflow: hidden;
+}
+.in_basket{
+    background:url(../images/button.png) 0 0 no-repeat;
+    width: 134px;
+    height: 38px;
+}
+.right_part{
+    float: right;
+    position: relative;
+    width: 360px;
+}
+.btn_close{
+    background:url(../images/btn_close.png) 0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    display: block;
+    text-indent: -9999px;
+
+}
+.btn_likes{
+    background:url(../images/btn_likes.png) 0 0 no-repeat;
+    height: 36px;
+    float: left;
+    font-style: normal;
+    margin-right: 3px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.btn_likes span{
+    background:url(../images/btn_likes.png) 100% -36px no-repeat;
+    float: left;
+    margin-right: -3px;
+}
+.btn_likes input{
+    width: 153px;
+    background: none;
+    border: none;
+    height: 36px;
+    line-height: 36px;
+    color: #535252;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Times New Roman',Times,serif;
+}
+.picture, .picture img{
+    float: right;
+}
+.picture{
+    padding-top: 24px;
+    position: relative;
+    height: 310px;
+    width: 354px;
+    border-bottom: 1px solid #d0cfce;
+}
+.btn_rotate{
+    background:url(../images/rotate.png) 0 4px no-repeat;
+    padding-left: 30px;
+    float: left;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    color: #535252;
+    top: 97px;
+    text-transform: uppercase;
+}
+.names_ring{
+    position: absolute;
+    bottom: 15px;
+    padding-left: 100px;
+    width: 100%;
+}
+.names_ring strong{
+    font-size: 14px;
+    text-transform: uppercase;
+    float: left;
+    padding: 0 25px;
+}
+.analog{
+    clear: both;
+    overflow: hidden;
+}
+.analog h3{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 10px 0 5px 15px;
+}
+.analog li{
+    float: left;
+    width: 115px;
+    text-align: center;
+}
