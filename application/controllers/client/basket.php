@@ -13,7 +13,7 @@ class Basket extends CI_Controller
             $product['qty'] = 1;
             $product['price'] = 1;
             $product['name'] = $this->input->get('name') ? $this->input->get('name') : 'Obruchalnoe kolco';
-            $product['options'] = array('m_art' => $this->input->get('m_art'), 'f_art' => $this->input->get('f_art'));
+//            $product['options'] = array('artikul' => $this->input->get('artikul'), 'f_art' => $this->input->get('f_art'));
             $this->cart->insert($product);
             echo $this->cart->total_items();
         }

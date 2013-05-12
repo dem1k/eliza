@@ -3,16 +3,8 @@
 <?=form_open_multipart('admin/product/create');?>
 <?=form_error("name","<span class='error'>","</span><br/>")?>
 <?=form_error("collection","<span class='error'>","</span><br/>")?>
-<? // =form_error("class","<span class='error'>","</span><br/>")?>
-<?=form_error("metal","<span class='error'>","</span><br/>")?>
-<?=form_error("color1","<span class='error'>","</span><br/>")?>
-<!--?=form_error("color2","<span class='error'>","</span><br/>")?-->
-<!--?=form_error("color3","<span class='error'>","</span><br/>")?-->
-<?=form_error("rock","<span class='error'>","</span><br/>")?>
-<?=form_error("m_art","<span class='error'>","</span><br/>")?>
-<?=form_error("m_weight","<span class='error'>","</span><br/>")?>
-<?=form_error("f_art","<span class='error'>","</span><br/>")?>
-<?=form_error("f_weight","<span class='error'>","</span><br/>")?>
+<?=form_error("brand","<span class='error'>","</span><br/>")?>
+<?=form_error("artikul","<span class='error'>","</span><br/>")?>
 <?=form_error("new","<span class='error'>","</span><br/>")?>
 <?=form_error("fan","<span class='error'>","</span><br/>")?>
 <?=form_error("description","<span class='error'>","</span><br/>")?>
@@ -28,6 +20,14 @@
         </td>
     </tr>
     <tr>
+    <td>
+        Артикул
+    </td>
+    <td>
+        <input type="text" name="artikul" value="<?=set_value("artikul")?>"/>
+    </td>
+</tr>
+    <tr>
         <td>
             Коллекция
         </td>
@@ -41,96 +41,22 @@
             </select>
         </td>
     </tr>
-    <!--
-    <tr>
-        <td>
-            Группа товара
-        </td>
-        <td>
-            <select name="class">
-                <?php foreach ($classes as $class):?>
-                <option value="<?=$class['id']?>"<?=set_select('class', $class['id'])?> > <?=$class['name']?></option>
-                <?php endforeach;?>
-                <option value=""<?=set_select('class', 0,true)?> >не выбрано</option>
 
-            </select>
-        </td>
-    </tr>
-    -->
     <tr >
         <td>
-            Металл
+            Бренд
         </td>
 
         <td>
-            <select name="metal">
-                <?php foreach ($metals as $metal):?>
-                <option value="<?=$metal['id']?>"<?=set_select('metal', $metal['id'])?> > <?=$metal['name']?></option>
+            <select name="brand">
+                <?php foreach ($brands as $brand):?>
+                <option value="<?=$brand['id']?>"<?=set_select('brand', $brand['id'])?> > <?=$brand['name']?></option>
                 <?php endforeach;?>
-                <option value="0"<?=set_select('metal', 0,true)?> >не выбрано</option>
+                <option value="0"<?=set_select('brand', 0,true)?> >не выбрано</option>
 
 
             </select>
         </td>
-    <tr bgcolor="#EEEEEE">
-        <td>
-            Цвет металла
-        </td>
-        <td>
-             <select name="color1">
-                <?php foreach ($colors as $color):?>
-                <option value="<?=$color['id']?>"<?=set_select('color1', $color['id'])?> > <?=$color['name']?></option>
-                <?php endforeach;?>
-                <option value=""<?=set_select('color1', 0,true)?> >не выбрано</option>
-
-
-            </select>
-        </td>
-    </tr>
-    <!--tr bgcolor="#EEEEEE">
-        <td align="right">1
-        </td>
-        <td>
-            <select name="color1">
-                <?php foreach ($colors as $color):?>
-                <option value="<?=$color['id']?>"<?=set_select('color1', $color['id'])?> > <?=$color['name']?></option>
-                <?php endforeach;?>
-                <option value=""<?=set_select('color1', 0,true)?> >не выбрано</option>
-
-
-            </select>
-        </td>
-    </tr>
-
-    <tr bgcolor="#EEEEEE">
-        <td align="right">2
-        </td>
-        <td>
-            <select name="color2">
-                <?php foreach ($colors as $color):?>
-                <option value="<?=$color['id']?>"<?=set_select('color2', $color['id'])?> > <?=$color['name']?></option>
-                <?php endforeach;?>
-                <option value=""<?=set_select('color2', 0,true)?> >не выбрано</option>
-
-
-            </select>
-        </td>
-    </tr>
-
-    <tr bgcolor="#EEEEEE">
-        <td align="right">3
-        </td>
-        <td>
-            <select name="color3">
-                <?php foreach ($colors as $color):?>
-                <option value="<?=$color['id']?>"<?=set_select('color3', $color['id'])?> > <?=$color['name']?></option>
-                <?php endforeach;?>
-                <option value=""<?=set_select('color3', 0,true)?> >не выбрано</option>
-
-
-            </select>
-        </td>
-    </tr-->
     <tr>
         <td>
             Вставка
@@ -145,55 +71,6 @@
 
             </select>
         </td>
-    </tr>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td>Мужское</td>
-                </tr>
-                <tr>
-                    <td>
-                        Артикул
-                    </td>
-                    <td>
-                        <input type="text" name="m_art" value="<?=set_value("m_art")?>"/>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Средний вес (гр.)
-                    </td>
-                    <td>
-                        <input type="text" name="m_weight" value="<?=set_value("m_weight")?>"/>
-                    </td>
-                </tr>
-
-            </table>
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <td>Женское</td></tr>
-                <tr>
-                    <td>
-                        Артикул
-                    </td>
-                    <td>
-                        <input type="text" name="f_art"value="<?=set_value("f_art")?>"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Средний вес (гр.)
-                    </td>
-                    <td>
-                        <input type="text" name="f_weight"value="<?=set_value("f_weight")?>"/>
-                    </td>
-                </tr>
-
-            </table></td>
     </tr>
     <tr>
         <td>

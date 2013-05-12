@@ -69,8 +69,7 @@ class Basket_model extends CI_Model
         $this->db->select('
         orders.id as order_id,
         products.name as product_name,
-        products.m_art as m_art,
-        products.f_art as f_art,
+        products.artikul as artikul,
         products.image_big as image_big,
         products.image_small as image_small,
         users.username as username,

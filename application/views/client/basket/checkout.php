@@ -77,7 +77,7 @@
                                                  alt=""/>
                                         </div>
                                         <div class="descript_ring">
-                                            <strong class="head_articul"><?php echo $product['m_art']?></strong>
+                                            <strong class="head_articul"><?php echo $product['artikul']?></strong>
 
                                             <p><strong>вес:</strong> <?php echo $product['m_weight']?> г</p>
 

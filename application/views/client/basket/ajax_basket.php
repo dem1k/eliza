@@ -34,15 +34,13 @@
                                             </div>
                                         </td>
                                         <td class="characteristic">
-                                            <p class="upper"><?php echo $product['name'] ? $product['name'] : "Обручальное кольцо из {$product['metal']} c {$product['rock']}"?></p>
+                                            <p class="upper"><?php echo $product['name'] ? $product['name'] : "Обручальное кольцо из {$product['brand']} c {$product['rock']}"?></p>
 
-                                            <p><strong>вес:</strong> <?php echo $product['m_weight']?>
-                                                / <?php echo $product['f_weight']?> г</p>
 
                                             <p><strong>вставка:</strong> <?php echo $product['rock']?></p>
                                             <!--                                        <p><strong>вес вставки:</strong> 0,3 г</p>-->
                                         </td>
-                                        <td><?php echo $product['m_art']?> <br/><?php echo $product['f_art']?></td>
+                                        <td><?php echo $product['artikul']?> </td>
                                         <td class="checkbox_col">
                                             <div class="check_element">
                                                 <label for="ring1_male">мужское</label>

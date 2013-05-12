@@ -11,23 +11,10 @@
                             <h2 id="name"><?=$prod['name']?></h2>
                             <input type="hidden" name='id' value="<?=$prod['id']?>">
                             <input type="hidden" name='name' value="<?=$prod['name']?>">
-                            <input type="hidden" name='m_art' value="<?=$prod['m_art']?>">
-                            <input type="hidden" name='f_art' value="<?=$prod['f_art']?>">
+                            <input type="hidden" name='artikul' value="<?=$prod['artikul']?>">
                             <table>
                                 <tr>
-                                    <th scope="col" id="m_art"> <?=$prod['m_art']?></th>
-                                    <th scope="col" id="f_art"> <?=$prod['f_art']?></th>
-                                </tr>
-                                <tr>
-                                    <td><strong>вес:</strong> <span id="m_weight"><?=$prod['m_weight']?></span> г</td>
-                                    <td><strong>вес:</strong> <span
-                                        id="f_weight"><?=$prod['f_weight'] ? $prod['f_weight'] : $prod['m_weight']?></span>
-                                        г
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Цвет:</strong> <span><?=$prod['color']?></span></td>
-                                    <td><strong>Цвет:</strong> <span><?=$prod['color']?></span></td>
+                                    <th scope="col" id="artikul"> <?=$prod['artikul']?></th>
                                 </tr>
                                 <tr>
                                     <td><strong>вставка:</strong><span class="rock"><?=$prod['rock']?></span></td>
@@ -43,16 +30,15 @@
                                 <?php echo $prod['description'] ?>
                                 <?php else: ?>
                                 <p align="justify">
-                                    По Вашему желанию мы изготовим любое кольцо: от классического гладкого до
-                                    авторского, состоящего из 2х, 3х и 4х сплавов металла разного цвета.
-                                </p><p align="justify">
-                                    Любая модель может быть исполнена в разных цветах: розовом, красном, желтом, белом.
-                                </p><p align="justify">
-                                    Кольцо может быть исполнено в любой технике матирования.
-                                </p><p align="justify">
-                                    На обручальное кольцо может быть нанесена гравировка.
-                                </p><p align="justify">
-                                    <strong> Вы обязательно найдете у нас Ваше идеальное кольцо!</strong>
+                                    13 грн.
+                                </p>
+
+                                <p align="justify">
+                                    Минимальный заказ — 12 шт.
+                                </p>
+
+                                <p align="justify">
+                                    Минимальная сумма заказа — 500 грн.
                                 </p>
                                 <?php endif;?>
                             </div>
@@ -70,12 +56,11 @@
                                 <img src="/uploads/products/<?=$prod['image_big']?>" alt=""/>
 
                                 <div class="names_ring">
-                                    <strong><?=$prod['m_art']?></strong>
-                                    <strong><?=$prod['f_art']?></strong>
+                                    <strong><?=$prod['artikul']?></strong>
                                 </div>
                             </div>
                             <div class="analog">
-                                <h3>Похожие кольца</h3>
+                                <h3>Похожие товары</h3>
                                 <ul><?if (isset($related_rings)): ?>
                                     <?php foreach ($related_rings as $r_ring): ?>
                                         <li>

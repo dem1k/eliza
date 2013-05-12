@@ -9,15 +9,9 @@
 <?=form_error("name","<span class='error'>","</span><br/>")?>
 <?=form_error("collection","<span class='error'>","</span><br/>")?>
 <? // =form_error("class","<span class='error'>","</span><br/>")?>
-<?=form_error("metal","<span class='error'>","</span><br/>")?>
-<?=form_error("color1","<span class='error'>","</span><br/>")?>
-<!--?=form_error("color2","<span class='error'>","</span><br/>")?-->
-<!--?=form_error("color3","<span class='error'>","</span><br/>")?-->
+<?=form_error("brand","<span class='error'>","</span><br/>")?>
 <?=form_error("rock","<span class='error'>","</span><br/>")?>
-<?=form_error("m_art","<span class='error'>","</span><br/>")?>
-<?=form_error("m_weight","<span class='error'>","</span><br/>")?>
-<?=form_error("f_art","<span class='error'>","</span><br/>")?>
-<?=form_error("f_weight","<span class='error'>","</span><br/>")?>
+<?=form_error("artikul","<span class='error'>","</span><br/>")?>
 <?=form_error("new","<span class='error'>","</span><br/>")?>
 <?=form_error("fan","<span class='error'>","</span><br/>")?>
 <?=form_error("description","<span class='error'>","</span><br/>")?>
@@ -34,6 +28,14 @@
     </tr>
     <tr>
         <td>
+            Артикул:
+        </td>
+        <td>
+            <?=$product['artikul']?>
+        </td>
+    </tr>
+    <tr>
+        <td>
             Коллекция
         </td>
         <td>
@@ -44,92 +46,19 @@
             </select>
         </td>
     </tr>
-    <!--
-    <tr>
-        <td>
-            Группа товара
-        </td>
-        <td>
-            <select name="class">
-                <?php foreach ($classes as $class):?>
-                <option value="<?=$class['id']?>"<?=$class['name']==$product['class']?set_select('class', $class['id'],true):set_select('class', $class['id'],false)?> > <?=$class['name']?></option>
-                <?php endforeach;?>
-            </select>
-        </td>
-    </tr>
-    -->
     <tr >
         <td>
-            Металл
+            Бренд
         </td>
 
         <td>
-            <select name="metal">
-                <?php foreach ($metals as $metal):?>
-                <option value="<?=$metal['id']?>"<?=$metal['name']==$product['metal']?set_select('metal', $metal['id'],true):set_select('metal', $metal['id'],false)?> > <?=$metal['name']?></option>
+            <select name="brand">
+                <?php foreach ($brands as $brand):?>
+                <option value="<?=$brand['id']?>"<?=$brand['name']==$product['brand']?set_select('brand', $brand['id'],true):set_select('brand', $brand['id'],false)?> > <?=$brand['name']?></option>
                 <?php endforeach;?>
             </select>
         </td>
-    <tr bgcolor="#EEEEEE">
-        <td>
-            Цвет металла
-        </td>
-        <td> <select name="color1">
-                <?php foreach ($colors as $color):?>
-                <option value="<?=$color['id']?>"<?=$color['name']==$product['color1_id']?set_select('color', $color['id'],true):set_select('color', $color['id'],false)?> > <?=$color['name']?></option>
-                <?php endforeach;?>
-            </select>
-        </td>
-    </tr>
-    <!--tr bgcolor="#EEEEEE">
-        <td align="right">1
-        </td>
-        <td>
-            <select name="color1">
-                <?php foreach ($colors as $color):?>
-                <option value="<?=$color['id']?>"<?=$color['name']==$product['color1_id']?set_select('color', $color['id'],true):set_select('color', $color['id'],false)?> > <?=$color['name']?></option>
-                <?php endforeach;?>
-            </select>
-        </td>
-    </tr>
 
-    <tr bgcolor="#EEEEEE">
-        <td align="right">2
-        </td>
-        <td>
-            <select name="color2">
-                <?php foreach ($colors as $color):?>
-                <option value="0"> не выбрано</option>
-                    <? if( $color['name']==$product['color2_id']) : ?>
-                <option value="<?=$color['id']?>"<?= set_select('color2', $color['id'],true)?>> <?=$color['name']?></option>
-                    <?else :?>
-                <option value="<?=$color['id']?>"<?= set_select('color2', $color['id'],false)?>> <?=$color['name']?></option>
-                    <?endif;?>
-                <?php endforeach;?>
-
-
-            </select>
-        </td>
-    </tr>
-
-    <tr bgcolor="#EEEEEE">
-        <td align="right">3
-        </td>
-        <td>
-            <select name="color3">
-                <?php foreach ($colors as $color):?>
-                <option value="0"> не выбрано</option>
-                    <? if( $color['name']==$product['color3_id']) : ?>
-                <option value="<?=$color['id']?>"<?= set_select('color3', $color['id'],true)?>> <?=$color['name']?></option>
-                    <?else :?>
-                <option value="<?=$color['id']?>"<?= set_select('color3', $color['id'],false)?>> <?=$color['name']?></option>
-                    <?endif;?>
-                <?php endforeach;?>
-
-
-            </select>
-        </td>
-    </tr-->
     <tr>
         <td>
             Вставка
@@ -142,55 +71,7 @@
             </select>
         </td>
     </tr>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td>Мужское</td>
-                </tr>
-                <tr>
-                    <td>
-                        Артикул
-                    </td>
-                    <td>
-                        <input type="text" name="m_art" value="<?=set_value("m_art",$product['m_art'])?>"/>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td>
-                        Средний вес (гр.)
-                    </td>
-                    <td>
-                        <input type="text" name="m_weight" value="<?=set_value("m_weight",$product['m_weight'])?>"/>
-                    </td>
-                </tr>
-
-            </table>
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <td>Женское</td></tr>
-                <tr>
-                    <td>
-                        Артикул
-                    </td>
-                    <td>
-                        <input type="text" name="f_art"value="<?=set_value("f_art",$product['f_art'])?>"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Средний вес (гр.)
-                    </td>
-                    <td>
-                        <input type="text" name="f_weight"value="<?=set_value("f_weight",$product['f_weight'])?>"/>
-                    </td>
-                </tr>
-
-            </table></td>
-    </tr>
     <tr>
         <td>
             Новинка (0-99)

@@ -36,19 +36,13 @@
 
                     <div class="hover_model" key="<?=$product->id ?>">
                         <div class="top_part">
-                            <strong><?=$product->m_art ?></strong>
+                            <strong><?=$product->artikul ?></strong>
                             <br/>
                             <span>вес <span id="m_weight1"><?=$product->m_weight ?></span> г.</span><br/>
                             <a class="show_more_details" href="/product/<?=$product->id?>"
                                onclick="window.show_more_details(this);return false">Узнать больше</a>
                         </div>
-                        <div class="btm_part">
-                            <strong><?=$product->f_art ?></strong>
-                            <br/>
-                            <span>вес <span id="f_weight1"><?=$product->f_weight?$product->f_weight:$product->m_weight ?></span> г.</span><br/>
-                            <a class="show_more_details" href="/product/<?=$product->id?>"
-                               onclick="window.show_more_details(this);return false">Узнать больше</a>
-                        </div>
+
                         <div style="display: none;" id="rock"><?=$product->rock_id ?></div>
                         <div style="display: none;" id="name1"><?=$product->name ?></div>
                     </div>

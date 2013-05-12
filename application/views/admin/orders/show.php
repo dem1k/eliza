@@ -47,7 +47,7 @@
     </tr>
     <tr>
         <td>Артикул</td>
-        <td><?php echo $product->m_art?>/<?php echo $product->f_art?></td>
+        <td><?php echo $product->artikul?></td>
     </tr>
     <tr>
         <td>Картинка</td>

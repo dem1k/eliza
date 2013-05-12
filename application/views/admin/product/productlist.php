@@ -39,10 +39,7 @@
             <? foreach ($product as $prod): ?>
         <tr>
             <td>
-                        <?php echo $prod->m_art ?>
-                <br/>
-                        <?php echo $prod->f_art ?>
-                <br/>
+                        <?php echo $prod->artikul ?>
             </td>
             <td><img height="135" src="/uploads/products/<?=$prod->image_big?> " alt="<?php echo $prod->image_big?> "> </img></td>
 

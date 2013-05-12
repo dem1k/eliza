@@ -4,15 +4,15 @@
     <div class="filters" >
 
         <ul class="name_filter">
-            <li><a href="#"><strong>металл</strong><span>&nbsp;</span></a>
+            <li><a href="#"><strong>бренд</strong><span>&nbsp;</span></a>
                 <div class="wrap_param">
-                    <ul class="parametrs metal_filter">
-                        <?php foreach($metals as $metal):?>
+                    <ul class="parametrs brand_filter">
+                        <?php foreach($brands as $brand):?>
                         <li >
-                            <a href="#" class="check_box" metal_id="<?= $metal['id']?>"><?= $metal['name']?></a>
+                            <a href="#" class="check_box" brand_id="<?= $brand['id']?>"><?= $brand['name']?></a>
                         </li>
                         <?php endforeach?>
-                        <li class="show_all" metal_id=" "><a href="" >показать все</a></li>
+                        <li class="show_all" brand_id=" "><a href="" >показать все</a></li>
                     </ul>
                 </div>
             </li>
@@ -95,18 +95,13 @@
                     ?>
                     <img height="188px"  src="/uploads/products/th/<?=$thumb.$product->image_small ?>" alt="" />
                 </a>
-                <div class="metall_hidden" type="text"><?=$product->metal_id ?></div>
+                <div class="brandl_hidden" type="text"><?=$product->brand_id ?></div>
                 <div class="color_hidden" type="text"><?=$product->color1_id ?></div>
                 <div class="rock_hidden" type="text"><?=$product->rock_id ?></div>
                 <div class="hover_model" key="<?=$product->id ?>">
                     <div class="top_part" >
-                        <strong><?=$product->m_art ?></strong>
+                        <strong><?=$product->artikul ?></strong>
                         <br/><span>вес <span id="m_weight1"><?=$product->m_weight ?></span> г</span><br/>
-                        <a href="#">Узнать больше</a>
-                    </div>
-                    <div class="btm_part">
-                        <strong><?=$product->f_art ?></strong>
-                        <br/><span>вес <span id="f_weight1"><?=$product->f_weight ?></span> г</span><br/>
                         <a href="#">Узнать больше</a>
                     </div>
                     <div style="display: none;" id="rock"><?=$product->rock_id ?></div>
@@ -133,7 +128,7 @@
     </div>
     <div class="panel">
         <div id="filter">
-            <input class="metall_hidden" type="text"/>
+            <input class="brandl_hidden" type="text"/>
             <input class="color_hidden" type="text"/>
             <input class="rock_hidden" type="text"/>
         </div>
@@ -154,7 +149,7 @@
             sort_name: ".newest",
             sort_is_num: true,
             filter: {
-                metall_hidden: "div.metall_hidden",
+                brandl_hidden: "div.brandl_hidden",
                 color_hidden: "div.color_hidden",
                 rock_hidden: "div.rock_hidden",
             },
@@ -172,9 +167,9 @@
 
 
 
-        $('.metal_filter > li.show_all > a').live('click',function(){
-            $('.metal_filter > li').removeClass('active');
-            $('input.metall_hidden').val('').keyup();
+        $('.brand_filter > li.show_all > a').live('click',function(){
+            $('.brand_filter > li').removeClass('active');
+            $('input.brandl_hidden').val('').keyup();
             return false;
         })
         $('.color_filter > li.show_all > a').live('click',function(){
@@ -187,19 +182,19 @@
             $('input.rock_hidden').val('').keyup();
             return false;
         })
-        $('.metal_filter').find('a.check_box').live('click',function(){
+        $('.brand_filter').find('a.check_box').live('click',function(){
             $(this).parent().toggleClass('active');
             var aArr= new Array();
-            aArr=$('.metal_filter > li.active > a');
+            aArr=$('.brand_filter > li.active > a');
             var search_str='';
             for(i=0;i<aArr.length;i++){
                 if (i!=aArr.length-1)
-                    search_str+=$(aArr[i]).attr('metal_id')+',';
+                    search_str+=$(aArr[i]).attr('brand_id')+',';
                 else
-                    search_str+=$(aArr[i]).attr('metal_id');
+                    search_str+=$(aArr[i]).attr('brand_id');
             }
-            $('input.metall_hidden').val(search_str).keyup();
-            //            $('input.metall_hidden').keyup();
+            $('input.brandl_hidden').val(search_str).keyup();
+            //            $('input.brandl_hidden').keyup();
             return false;
         })
         $('.color_filter').find('a.check_box').live('click',function(){
@@ -214,7 +209,7 @@
                     search_str+=$(aArr[i]).attr('color_id');
             }
             $('input.color_hidden').val(search_str).keyup();
-            //            $('input.metall_hidden').keyup();
+            //            $('input.brandl_hidden').keyup();
             return false;
         })
         $('.rock_filter').find('a.check_box').live('click',function(){
@@ -249,13 +244,8 @@
 
         $('.cat_product').live('click',function(){
             id=$(this).children('.hover_model').attr("key")
-            $('#m_art').text($(this).find('.top_part').children('strong').text())
-            $('#f_art').text($(this).find('.btm_part').children('strong').text())
-            $("#m_weight").text($(this).find('#m_weight1').text())
-            $("#f_weight").text($(this).find('#f_weight1').text())
-            $("#name").text($(this).find('#name1').text())
-            $('.names_ring :first-child').text($('#m_art').html());
-            $('.names_ring :nth-child(2)').text($('#f_art').html());
+            $('#artikul').text($(this).find('.top_part').children('strong').text())
+            $('.names_ring :first-child').text($('#artikul').html());
             rock_id=$(this).find('#rock').text();
 
             $.post("/product/getProductData/", { key: "getData",id:id },

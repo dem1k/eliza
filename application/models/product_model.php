@@ -20,7 +20,7 @@ class Product_model extends CI_Model
      * @param bool $active = true
      * @param int $page = 1
      * @param int $limit = 20
-     * @param array $metal = array()
+     * @param array $brand = array()
      * @param array $color = array()
      * @param array $rock = array()
      * @param bool $sort = array()
@@ -33,15 +33,11 @@ class Product_model extends CI_Model
         $q->select('
             products.id as id,
             products.name as name,
-            products.f_art as f_art,
-            products.m_art as m_art,
-            products.f_weight as f_weight,
-            products.m_weight as m_weight,
+            products.artikul as artikul,
             products.image_small as image_small,
             products.image_big as image_big,
             products.description as description,
-            products.metal_id as metal_id,
-            products.color1_id as color1_id,
+            products.brand_id as brand_id,
             products.rock_id as rock_id,
             categories.name as categories,
             products.new as new,
@@ -54,9 +50,9 @@ class Product_model extends CI_Model
         if (isset($conditions['active']))
             $q->where('is_active', 1);
         if (isset($conditions['search']) && $conditions['search'])
-            $q->like('m_art', trim($conditions['search']))->or_like('f_art', trim($conditions['search']));
-        if (isset($filetrs['metal']) && $filetrs['metal'])
-            $q->where_in('metal_id', $filetrs['metal']);
+            $q->like('artikul', trim($conditions['search']));
+        if (isset($filetrs['brand']) && $filetrs['brand'])
+            $q->where_in('brand_id', $filetrs['brand']);
 
         if (isset($filetrs['color']) && $filetrs['color'])
             $q->where_in('color1_id', $filetrs['color']);
@@ -84,9 +80,9 @@ if (isset($conditions['sort']))
         if (isset($conditions['active']))
             $q->where('is_active', 1);
         if (isset($conditions['search']) && $conditions['search'])
-            $q->like('m_art', trim($conditions['search']))->or_like('f_art', trim($conditions['search']));
-        if (isset($filetrs['metal']) && $filetrs['metal'])
-            $q->where_in('metal_id', $filetrs['metal']);
+            $q->like('artikul', trim($conditions['search']));
+        if (isset($filetrs['brand']) && $filetrs['brand'])
+            $q->where_in('brand_id', $filetrs['brand']);
 
         if (isset($filetrs['color']) && $filetrs['color'])
             $q->where_in('color1_id', $filetrs['color']);
@@ -105,8 +101,7 @@ if (isset($conditions['sort']))
     {
         return $this->db->select()
             ->from('products')
-            ->like('m_art', $search)
-            ->or_like('f_art', $search)
+            ->like('artikul', $search)
             ->order_by('id', 'asc')
             ->get()
             ->result();
@@ -131,10 +126,10 @@ if (isset($conditions['sort']))
             ->result_array();
     }
 
-    public function getMetals()
+    public function getBrands()
     {
         return $this->db->select()
-            ->from('metals')
+            ->from('brands')
             ->order_by('id', 'asc')
             ->get()
             ->result_array();
@@ -183,15 +178,12 @@ if (isset($conditions['sort']))
             products.name as name,
             categories.name as collection,
             classes.name as class,
-            metals.name as metal,
+            brands.name as brand,
             rocks.name as rock,
             colors.name as color,
             products.color1_id,
             products.collection_id as collection_id,
-            products.m_art,
-            products.m_weight,
-            products.f_art,
-            products.f_weight,
+            products.artikul,
             products.new,
             products.fan,
             products.description,
@@ -201,7 +193,7 @@ if (isset($conditions['sort']))
             ->from('products')
             ->join('categories', 'categories.id = products.collection_id', 'LEFT')
             ->join('classes', 'classes.id = products.class_id', 'LEFT')
-            ->join('metals', 'metals.id = products.metal_id', 'LEFT')
+            ->join('brands', 'brands.id = products.brand_id', 'LEFT')
             ->join('rocks', 'rocks.id = products.rock_id', 'LEFT')
             ->join('colors', 'colors.id = products.color1_id', 'LEFT')
             ->where('products.id', $id)
@@ -220,7 +212,7 @@ if (isset($conditions['sort']))
             ->from('products')
             ->join('categories', 'categories.id = products.collection_id', 'LEFT')
             ->join('classes', 'classes.id = products.class_id', 'LEFT')
-            ->join('metals', 'metals.id = products.metal_id', 'LEFT')
+            ->join('brands', 'brands.id = products.brand_id', 'LEFT')
             ->join('rocks', 'rocks.id = products.rock_id', 'LEFT')
             ->where('products.id', $id)
             ->get()
@@ -262,20 +254,11 @@ if (isset($conditions['sort']))
         return $query;
     }
 
-    public function checkfArt($str)
-    {
-        return $this->db->select()
-            ->from('products')
-            ->where_in('f_art', $str)
-            ->get()
-            ->result();
-    }
-
     public function checkmArt($str)
     {
         return $this->db->select()
             ->from('products')
-            ->where_in('m_art', $str)
+            ->where_in('artikul', $str)
             ->get()
             ->result();
     }

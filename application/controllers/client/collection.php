@@ -13,7 +13,7 @@ class Collection extends CI_Controller
         $page = $this->input->get('page') ? $this->input->get('page') : $this->uri->segment(3, 1);
         $per_page = $this->input->get('per_page') ? $this->input->get('per_page') : $this->uri->segment(4, 20);
 
-        $filter['metal'] = $this->input->get('metal');
+        $filter['brand'] = $this->input->get('brand');
         $filter['color'] = $this->input->get('color');
         $filter['rock'] = $this->input->get('rock');
         $filter['collection'] = $this->input->get('collection');
@@ -34,7 +34,7 @@ class Collection extends CI_Controller
         $this->data['pages'] = $pages;
         $this->data['template'] = 'client/collection/index_new';
         $this->data['title'] = 'Обручалочка';
-        $this->data['metals'] = $this->parametrs_model->getAllByParametr('metals');
+        $this->data['brands'] = $this->parametrs_model->getAllByParametr('brands');
         $this->data['colors'] = $this->parametrs_model->getAllByParametr('colors');
         $this->data['rocks'] = $this->parametrs_model->getAllByParametr('rocks');
         $this->data['collections'] = $this->parametrs_model->getAllByParametr('categories');

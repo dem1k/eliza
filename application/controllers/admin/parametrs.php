@@ -1,12 +1,12 @@
 <?php
 
 class Parametrs extends CI_Controller {
-    var $parametrs=array('metals','classes','colors','collections','rocks','category_art');
+    var $parametrs=array('brands','classes','colors','collections','rocks','category_art');
 
     function index() {
         $data['template'] = 'admin/parametrs/index';
         $data['res'] = $this->router->fetch_class();
-        $this->parametrs=array('metals','classes','colors','collections','rocks');
+        $this->parametrs=array('brands','classes','colors','collections','rocks');
         $data['parametrs']=$this->parametrs;
         foreach ($this->parametrs as $parametr) {
 

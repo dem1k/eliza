@@ -4,16 +4,10 @@
             <h2 id="name"><?=$prod['name']?></h2>
             <input type="hidden" name='id' value="<?=$prod['id']?>">
             <input type="hidden" name='name' value="<?=$prod['name']?>">
-            <input type="hidden" name='m_art' value="<?=$prod['m_art']?>">
-            <input type="hidden" name='f_art' value="<?=$prod['f_art']?>">
+            <input type="hidden" name='artikul' value="<?=$prod['artikul']?>">
             <table>
                 <tr>
-                    <th scope="col" id="m_art"> <?=$prod['m_art']?></th>
-                    <th scope="col" id="f_art"> <?=$prod['f_art']?></th>
-                </tr>
-                <tr>
-                    <td><strong>вес:</strong> <span id="m_weight"><?=$prod['m_weight']?></span> г</td>
-                    <td><strong>вес:</strong> <span id="f_weight"><?=$prod['f_weight']?$prod['f_weight']:$prod['m_weight']?></span> г</td>
+                    <th scope="col" id="artikul"> <?=$prod['artikul']?></th>
                 </tr>
                 <tr>
                     <td><strong>Цвет:</strong> <span ><?=$prod['color']?></span></td>
@@ -57,8 +51,7 @@
                 <img src="/uploads/products/<?=$prod['image_big']?>" alt=""/>
 
                 <div class="names_ring">
-                    <strong><?=$prod['m_art']?></strong>
-                    <strong><?=$prod['f_art']?></strong>
+                    <strong><?=$prod['artikul']?></strong>
                 </div>
             </div>
             <div class="analog">

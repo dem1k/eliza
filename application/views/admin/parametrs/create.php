@@ -2,11 +2,11 @@
 <h1> <?php 
 
         switch ($parametr) {
-        case 'collections':echo "Создать колекцию";
+        case 'collections':echo "Создать категорию";
             break;
         case 'classes':echo "Создать группу";
             break;
-        case 'metals':echo "Создать метал";
+        case 'brands':echo "Создать Бренд";
             break;
         case 'colors':echo "Создать цвет";
             break;

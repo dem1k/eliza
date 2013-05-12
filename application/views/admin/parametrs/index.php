@@ -13,7 +13,7 @@
     <ul>
         <li><a href="#collections" >Коллекции</a></li>
         <li><a href="#classes" >Группы</a></li>
-        <li><a href="#metals" >Металлы</a></li>
+        <li><a href="#brands" >Бренды</a></li>
         <li><a href="#colors" >Цвета</a></li>
         <li><a href="#rocks" >Вставки</a></li>
     </ul>
@@ -73,8 +73,8 @@
         </table>
 
     </div>
-    <div id="metals">
-        <a class="button" href="/admin/parametrs/create/metals/">Создать металл</a> <br/>
+    <div id="brands">
+        <a class="button" href="/admin/parametrs/create/brands/">Создать бренд</a> <br/>
         <table width="100%" border="1px solid " cellspacing="0" cellpadding="0">
             <thead>
             <th width="20px">ID</th>
@@ -82,17 +82,17 @@
             <th width="200px">Действие</th>
             </thead>
             <tbody>
-                <?php foreach ($metals as $metal):?>
+                <?php foreach ($brands as $brand):?>
                 <tr>
                     <td>
-                            <?=$metal['id']?>
+                            <?=$brand['id']?>
                     </td>
                     <td>
-                            <?=$metal['name']?>
+                            <?=$brand['name']?>
                     </td>
                     <td>
-                        <a href="/admin/metal/edit/<?=$metal['id']?>/">Редактировать</a>
-                        <a  onclick="return confirm('Удалить металл с ID=<?=$metal['id']?>')" href="/admin/metal/delete/<?=$metal['id']?>/">Удалить</a>
+                        <a href="/admin/brand/edit/<?=$brand['id']?>/">Редактировать</a>
+                        <a  onclick="return confirm('Удалить бренд с ID=<?=$brand['id']?>')" href="/admin/brand/delete/<?=$brand['id']?>/">Удалить</a>
                     </td>
                 </tr>
                 <?endforeach;?>

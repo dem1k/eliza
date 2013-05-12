@@ -25,6 +25,14 @@
     </tr>
     <tr>
         <td>
+            Артикул:
+        </td>
+        <td>
+            <?=$product['artikul']?>
+        </td>
+    </tr>
+    <tr>
+        <td>
             Коллекция
         </td>
         <td>
@@ -41,44 +49,12 @@
     </tr>
     <tr >
         <td>
-            Металл
+            Бренд
         </td>
 
         <td>
-            <?=$product['metal']?>
+            <?=$product['brand']?>
         </td>
-    <tr bgcolor="#F2F2F2">
-        <td>
-            Цвет металла
-        </td>
-
-        <td>
-            <?=$color1[0]['name']?>
-        </td>
-    </tr>
-    <!--tr bgcolor="#F2F2F2">
-        <td align="right">1 цвет:
-        </td>
-        <td>
-            
-        </td>
-    </tr>
-
-    <tr bgcolor="#F2F2F2">
-        <td align="right">2 цвет:
-        </td>
-        <td >
-            < ?=isset($color3[0]['color_name'])?$color3[0]['color_name']:'Нет'?>
-        </td>
-    </tr>
-
-    <tr bgcolor="#F2F2F2">
-        <td align="right">3 цвет:
-        </td>
-        <td>
-            < ?=isset($color3[0]['color_name'])?$color3[0]['color_name']:'Нет'?>
-        </td>
-    </tr-->
     <tr>
         <td><br/>
             Вставка
@@ -86,55 +62,6 @@
         <td>
             <?=$product['rock']?>
         </td>
-    </tr>
-    <tr>
-        <td><br/>
-            <table>
-                <tr>
-                    <td><u>Мужское</u></td>
-                </tr>
-                <tr>
-                    <td>
-                        Артикул:
-                    </td>
-                    <td>
-                        <?=$product['m_art']?>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Средний вес :
-                    </td>
-                    <td border="solid">
-                        <?=$product['m_weight']?>(гр.)
-                    </td>
-                </tr>
-
-            </table>
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <td><u>Женское</u></td></tr>
-                <tr>
-                    <td>
-                        Артикул:
-                    </td>
-                    <td>
-                        <?=$product['f_art']?>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Средний вес: 
-                    </td>
-                    <td>
-                        <?=$product['f_weight']?>(гр.)
-                    </td>
-                </tr>
-
-            </table></td>
     </tr>
     <tr>
         <td>

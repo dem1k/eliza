@@ -32,17 +32,16 @@ class Product extends CI_Controller {
         $data['colors']=$this->product_model->getColors();
         $data['collections']=$this->product_model->getCollections();
         $data['classes']=$this->product_model->getClasses();
-        $data['metals']=$this->product_model->getMetals();
+        $data['brands']=$this->product_model->getbrands();
         $data['rocks']=$this->product_model->getRocks();
         $this->form_validation->set_rules('name', 'Название', 'trim|min_length[2]|xss_clean');
         $this->form_validation->set_rules('collection', 'Коллекция', 'trim|required|min_length[1]|max_length[2]|numeric|xss_clean');
 //        $this->form_validation->set_rules('class', 'Группа товара', 'trim|numeric|min_length[1]|max_length[2]');
-        $this->form_validation->set_rules('metal', 'Металл', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
-        $this->form_validation->set_rules('color1', 'Цвет металла ', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
+        $this->form_validation->set_rules('brand', 'бренд', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
+        $this->form_validation->set_rules('color1', 'Цвет бренда ', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
         $this->form_validation->set_rules('rock', 'Вставка', 'trim|required|numeric|xss_clean|max_length[2]');
-        $this->form_validation->set_rules('m_art', 'муж. артикул', 'trim|required|xss_clean|callback_art_check');
+        $this->form_validation->set_rules('artikul', 'муж. артикул', 'trim|required|xss_clean|callback_art_check');
         $this->form_validation->set_rules('m_weight', 'муж. вес', 'trim|numeric|xss_clean');
-        $this->form_validation->set_rules('f_art', 'жен. артикул', 'trim|required|xss_clean|callback_art_check');
         $this->form_validation->set_rules('f_weight', 'жен. вес', 'trim|numeric|xss_clean');
         $this->form_validation->set_rules('new', 'новинка', 'trim|numeric|xss_clean');
         $this->form_validation->set_rules('fan', 'популярность', 'trim|numeric|xss_clean');
@@ -60,15 +59,9 @@ class Product extends CI_Controller {
                         'name'=>set_value('name'),
                         'collection_id'=>set_value('collection'),
 //                        'class_id'=>set_value('class'),
-                        'metal_id'=>set_value('metal'),
-                        'color1_id'=>set_value('color1'),
-//                        'color2_id'=>set_value('color2'),
-//                        'color3_id'=>set_value('color3'),
+                        'brand_id'=>set_value('brand'),
                         'rock_id'=>set_value('rock'),
-                        'm_art'=>set_value('m_art'),
-                        'm_weight'=>set_value('m_weight'),
-                        'f_art'=>set_value('f_art'),
-                        'f_weight'=>set_value('f_weight'),
+                        'artikul'=>set_value('artikul'),
                         'new'=>set_value('new'),
                         'fan'=>set_value('fan'),
                         'description'=>set_value('description'),
@@ -93,18 +86,14 @@ class Product extends CI_Controller {
             $data['colors']=$this->product_model->getColors();
             $data['collections']=$this->product_model->getCollections();
             $data['classes']=$this->product_model->getClasses();
-            $data['metals']=$this->product_model->getMetals();
+            $data['brands']=$this->product_model->getbrands();
             $data['rocks']=$this->product_model->getRocks();
             $this->form_validation->set_rules('name', 'Название', 'trim|min_length[2]|xss_clean');
             $this->form_validation->set_rules('collection', 'Коллекция', 'trim|required|min_length[1]|max_length[2]|numeric|xss_clean');
 //            $this->form_validation->set_rules('class', 'Группа товара', 'trim|required|numeric|min_length[1]|max_length[2]');
-            $this->form_validation->set_rules('metal', 'Металл', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
-            $this->form_validation->set_rules('color1', 'Цвет металла ', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
+            $this->form_validation->set_rules('brand', 'бренд', 'trim|required|numeric|xss_clean|min_length[1]|max_length[2]');
             $this->form_validation->set_rules('rock', 'Вставка', 'trim|required|numeric|xss_clean|max_length[2]');
-            $this->form_validation->set_rules('m_art', 'муж. артикул', 'trim|required|xss_clean');
-            $this->form_validation->set_rules('m_weight', 'муж. вес', 'trim|numeric|xss_clean');
-            $this->form_validation->set_rules('f_art', 'жен. артикул', 'trim|required|xss_clean');
-            $this->form_validation->set_rules('f_weight', 'жен. вес', 'trim|numeric|xss_clean');
+            $this->form_validation->set_rules('artikul', 'муж. артикул', 'trim|required|xss_clean');
             $this->form_validation->set_rules('new', 'новинка', 'trim|numeric|xss_clean');
             $this->form_validation->set_rules('fan', 'популярность', 'trim|numeric|xss_clean');
             $this->form_validation->set_rules('description', 'Описание', 'trim|xss_clean|max_length[128]');
@@ -119,13 +108,9 @@ class Product extends CI_Controller {
                             'name'=>set_value('name'),
                             'collection_id'=>set_value('collection'),
 //                            'class_id'=>set_value('class'),
-                            'metal_id'=>set_value('metal'),
-                            'color1_id'=>set_value('color1'),
+                            'brand_id'=>set_value('brand'),
                             'rock_id'=>set_value('rock'),
-                            'm_art'=>set_value('m_art'),
-                            'm_weight'=>set_value('m_weight'),
-                            'f_art'=>set_value('f_art'),
-                            'f_weight'=>set_value('f_weight'),
+                            'artikul'=>set_value('artikul'),
                             'new'=>set_value('new'),
                             'fan'=>set_value('fan'),
                             'description'=>set_value('description'),

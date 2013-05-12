@@ -47,7 +47,7 @@
                                         <p><strong>вставка:</strong> <?php echo $product['ring']['rock']?></p>
                                         <!--                                        <p><strong>вес вставки:</strong> 0,3 г</p>-->
                                     </td>
-                                    <td><?php echo $product['ring']['m_art']?> <br/><?php echo $product['ring']['f_art']?></td>
+                                    <td><?php echo $product['ring']['artikul']?></td>
                                     <td class="checkbox_col">
                                         <div class="check_element">
                                             <label for="ring1_male">мужское</label>
