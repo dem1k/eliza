@@ -1,31 +1,7 @@
 <?php
 class Article extends CI_Controller {
    
-    var $converter = array(
-            'а' => 'a',   'б' => 'b',   'в' => 'v',
-            'г' => 'g',   'д' => 'd',   'е' => 'e',
-            'ё' => 'e',   'ж' => 'zh',  'з' => 'z',
-            'и' => 'i',   'й' => 'y',   'к' => 'k',
-            'л' => 'l',   'м' => 'm',   'н' => 'n',
-            'о' => 'o',   'п' => 'p',   'р' => 'r',
-            'с' => 's',   'т' => 't',   'у' => 'u',
-            'ф' => 'f',   'х' => 'h',   'ц' => 'c',
-            'ч' => 'ch',  'ш' => 'sh',  'щ' => 'sch',
-            'ь' => "'",  'ы' => 'y',   'ъ' => "'",
-            'э' => 'e',   'ю' => 'yu',  'я' => 'ya',
 
-            'А' => 'A',   'Б' => 'B',   'В' => 'V',
-            'Г' => 'G',   'Д' => 'D',   'Е' => 'E',
-            'Ё' => 'E',   'Ж' => 'Zh',  'З' => 'Z',
-            'И' => 'I',   'Й' => 'Y',   'К' => 'K',
-            'Л' => 'L',   'М' => 'M',   'Н' => 'N',
-            'О' => 'O',   'П' => 'P',   'Р' => 'R',
-            'С' => 'S',   'Т' => 'T',   'У' => 'U',
-            'Ф' => 'F',   'Х' => 'H',   'Ц' => 'C',
-            'Ч' => 'Ch',  'Ш' => 'Sh',  'Щ' => 'Sch',
-            'Ь' => "'",  'Ы' => 'Y',   'Ъ' => "'",
-            'Э' => 'E',   'Ю' => 'Yu',  'Я' => 'Ya',
-    );
     var $data = array();
     var $seo;
     function __construct(){
@@ -62,16 +38,9 @@ class Article extends CI_Controller {
                 $this->load->view('admin/main', $this->data);
             }else {
 
-                $st=set_value('name');
-                $st = strtr($st, $this->converter);
-                $slug = strtolower($st);
-                $slug = preg_replace("/[^a-z0-9\s-]/", "", $slug);
-                $slug = trim(preg_replace("/[\s-]+/", " ", $slug));
-                $slug = trim(substr($slug, 0, 64));
-                $slug = preg_replace("/\s/", "-", $slug);
                 $result=array(
                         'name'=>set_value('name'),
-                        'slug'=>$slug,
+                        'slug' => $this->my_lib->getSlug(set_value('name')),
                         'cut'=>$this->input->post('cut'),
                         'description'=>$this->input->post('description'),
                         'category_art'=>set_value('category_art'),

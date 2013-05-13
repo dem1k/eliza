@@ -7,13 +7,13 @@ class Category extends CI_Controller
     function __construct(){
         parent::__construct();
         $this->data['seo'] = $this->seo_model->getSeo();
+        $this->data['categories'] = $this->category_model->getAll();
     }
 
     public function index()
     {
         $this->data['template'] = 'admin/category/main';
         $this->data['res'] = $this->router->fetch_class();
-        $this->data['categories'] = $this->category_model->getAll();
         $this->load->view('admin/main', $this->data);
     }
 
@@ -29,6 +29,7 @@ class Category extends CI_Controller
             } else {
                 $category = array(
                     'name' => set_value('name'),
+                    'slug' => $this->my_lib->getSlug(set_value('name')),
                 );
                 $this->category_model->save($category);
                 redirect('/admin/category');
