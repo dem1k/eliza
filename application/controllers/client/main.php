@@ -15,7 +15,6 @@ class Main extends CI_Controller {
                 'basket_total'=>$total_qty,
                 'basket_total_price'=>$total_prc
         );
-
         $data['template']='content';
         $data['popular']=$this->product_model->getMostPopular(9)?$this->product_model->getMostPopular(9):false;
         $data['topMenu']=true;

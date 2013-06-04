@@ -15,7 +15,7 @@
 |
 */
 $config['base_url']	= 'http://eliza.dem1k/';
-//$config['base_url']	= 'http://www.obruchalnoe.com/';
+//$config['base_url']	= 'http://dem1k.fly.kh.ua/';
 $config['admin_url']	= $config['base_url'].'admin/';
 
 /*

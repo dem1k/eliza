@@ -1,62 +1,64 @@
 <?php
 
-class Category extends Controller {
-
-    function Category() {
-        parent::Controller();
-        $this->load->model('admin/category_model','',true);
-        $this->load->model('admin/sub_category_model','',true);
-        $this->load->model('admin/product_model','',true);
-        $this->load->model('admin/seo_model','',true);
-        $this->load->library('mybasket');
-        $this->mybasket->init();
+class Category extends CI_Controller
+{
+    var $data = array();
+    var $seo;
+    function __construct(){
+        parent::__construct();
+        $this->data['seo'] = $this->seo_model->getSeo();
+        $this->data['categories'] = $this->category_model->getAll();
+    }
+    public function index(){
+        $category  = $this->uri->segment(2);
+        $filter['brand'] = $this->input->get('brand');
+        $filter['category'] = $this->input->get('category');
+        $filter['cat_slug'] = $category;
+//        $conditions['search'] =$category;
+        $conditions['sort'] = $this->input->get('sort');
+        $conditions['active'] = true;//die('1');
+        $page = $this->input->get('page') ? $this->input->get('page') : $this->uri->segment(3, 1);
+        $per_page = $this->input->get('per_page') ? $this->input->get('per_page') : $this->uri->segment(4, 20);
+        $this->data['products'] = $this->product_model->getAll($conditions, $filter, $page, $per_page);
+$this->data['template'] = '/client/main/index';
+        $this->load->view('/client/main', $this->data);
 
     }
-    function show() {
-        if(!$slug=$this->uri->segment(2)) {
-            redirect('/');
-        }else {
+    public function products()
+    {
+        $page = $this->input->get('page') ? $this->input->get('page') : $this->uri->segment(3, 1);
+        $per_page = $this->input->get('per_page') ? $this->input->get('per_page') : $this->uri->segment(4, 20);
 
-            $perpage=$this->input->post('per_page')?$this->input->post('per_page'):25;
-            $page=$this->input->post('page')?$this->input->post('page'):1;
-            $basket=$this->mybasket->getBasket();
-            $total_prc=$total_qty=0;
-            foreach ($basket as $val) {
-                $total_qty+=(int) $val['qty'];
-                $total_prc+=(float) $val['total_price_uah'];
-            }
-            $data['basket']=array('basket_total'=>$total_qty,
-                    'basket_total_price'=>$total_prc);
-            $data['seo']=$this->seo_model->getSeo();
-            $data['topMenu']=true;
-            $data['popular']=false;
-            $data['big_ruler']=true;
-            $data['sidebar']=$this->category_model->getAll();
-            $data['sub_category']=$this->sub_category_model->getAll();
-            $data['category']=$this->category_model->getBySlug($slug);
-            if($subslug=$this->uri->segment(3)) {
-                $data['products']=$this->product_model->getProductBySubCategorySlug($subslug,$perpage,$page);
-            }else {
-                $data['products']=$this->product_model->getProductByCategorySlug($slug,$perpage,$page);
-            }
-            $this->load->library('pagination');
+        $filter['brand'] = $this->input->get('brand');
+        $filter['category'] = $this->input->get('category');
+        $conditions['search'] = $this->input->get('search');
+        $conditions['sort'] = $this->input->get('sort');
+        $conditions['active'] = true;
 
-            $config['base_url'] = '/category/'.$slug.'/page/';
-            $config['total_rows'] = 10;
-            $config['per_page'] = $perpage;
-            $config['prev_link'] = 'Назад';
-            $config['next_link'] = 'Вперед';
-            $config['last_link'] = false;
-            $config['first_link'] = false;
-            $config['cur_tag_open'] = '<b style="color:00cccc">';
-            $config['cur_tag_close'] = '</b>';
-
-            $this->pagination->initialize($config);
-            $data['pagination']=$this->pagination->create_links();
-            $data['template']='client/category/view';
-            $data['title']='Cвiт фото ';
-            $this->load->view('/client/main',$data);
+        $this->data['filters'] = $filter;
+        $this->data['conditions'] = $conditions;
+        $this->data['products'] = $products = $this->product_model->getAll($conditions, $filter, $page, $per_page);
+        $this->data['total_rows'] = $total_rows = $this->product_model->countAll($conditions, $filter);
+        $this->data['total_pages'] = $total_pages = round($total_rows / $per_page);
+        $this->load->library('My_pages');
+        $pager = $this->my_pages;
+        $pager->page=$page;
+        $pager->total_pages = $total_pages;
+        $pages = $pager->pages();
+        $this->data['pages'] = $pages;
+        $this->data['template'] = 'client/category/index_new';
+        $this->data['title'] = 'Elizabeth';
+        $this->data['brands'] = $this->parametrs_model->getAllByParametr('brands');
+        $this->data['colors'] = $this->parametrs_model->getAllByParametr('colors');
+        $this->data['rocks'] = $this->parametrs_model->getAllByParametr('rocks');
+        $this->data['categories'] = $this->parametrs_model->getAllByParametr('categories');
+        $articles_cats = $this->category_art_model->getAll();
+        foreach ($articles_cats as $cat) {
+            $article[$cat['name']] = $this->article_model->getByCatId($cat['id']);
         }
+        $this->data['articles_f'] = $article;
+
+        $this->load->view('/client/main', $this->data);
     }
 
 

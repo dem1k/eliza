@@ -10,8 +10,6 @@
         <script src="/assets/js/ui/ui/jquery.ui.core.js" type="text/javascript"></script>
         <script src="/assets/js/ui/ui/jquery.ui.widget.js" type="text/javascript"></script>
         <script src="/assets/js/ui/ui/jquery.ui.tabs.js" type="text/javascript"></script>
-        <script src="/assets/js/plupload/js/plupload.full.js" type="text/javascript"></script>
-<!--        <script type="text/javascript" src="/assets/js/script.js"></script>-->
     </head>
     <body>
         <div class="wrapper">

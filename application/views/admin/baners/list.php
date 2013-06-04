@@ -15,8 +15,8 @@
             <td><?=$baner->title?></td>
             <td>
 <!--                <a href="/admin/baners/view/--><?//=$baner->id?><!--/">Показать</a>-->
-                <a href="/admin/baners/update/<?=$baner->id?>/">Редактировать</a>
-                <a href="/admin/baners/delete/<?=$baner->id?>/" onclick="return confirm('Удалить ?')">Удалить</a></td>
+                <a class="edit_btn" title="Редактировать" href="/admin/baners/update/<?=$baner->id?>/">Редактировать</a>
+                <a class="delete_btn" title="Удалить" href="/admin/baners/delete/<?=$baner->id?>/" onclick="return confirm('Удалить ?')">Удалить</a></td>
         </tr>
             <?php endforeach?>
         <?php else:?>

@@ -1068,15 +1068,15 @@ a.jqTransformSelectOpen {
     clear: both;
 }
 .catalog li{
-    width: 235px;
-    height: 240px;
+    width: 200px;
+    height: 195px;
     float: left;
     text-align: center;
     border-bottom: 1px solid #e7e7e7;
     position: relative;
 }
 .catalog li a{
-    padding-top: 30px;
+    /*padding-top: 30px;*/
     display: inline-block;
 }
 .catalog li:hover .hover_model{
@@ -1091,7 +1091,7 @@ a.jqTransformSelectOpen {
     display: none;
     background:url(../images/bg_hover.png) 0 0 repeat;
     border: 1px solid #cfd1d1;
-    color: #686767;
+    color: #2f0010;
     font-weight: 700;
     font-size: 10px;
 }
@@ -1191,7 +1191,7 @@ a.jqTransformSelectOpen {
 .show_ring table tr th{
     border: 1px solid #d0d0d0;
     height: 50px;
-    color: #686767;
+    /*color: #686767;*/
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1314,4 +1314,56 @@ a.jqTransformSelectOpen {
     float: left;
     width: 115px;
     text-align: center;
+}
+.catalog{
+    overflow: hidden;
+    clear: both;
+}
+.catalog li{
+    width: 198px;
+    height: 240px;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+}
+.catalog li a{
+    /*padding-top: 30px;*/
+    display: inline-block;
+}
+.catalog li:hover .hover_model{
+    display: block;
+    color: #fdff9d;
+    background-color: #22628d;
+    opacity: 0.7; /* Полупрозрачный фон */
+}
+.hover_model{
+    position: absolute;
+    top: 0;
+    left: 29px;
+    width: 140px;
+    height: 186px;
+    display: none;
+    /*background:url(../images/bg_hover.png) 0 0 repeat;*/
+    border: 1px solid #cfd1d1;
+    /*color: #686767;*/
+    font-weight: 700;
+    font-size: 10px;
+}
+.hover_model strong{
+    font-size: 18px;
+}
+.hover_model span{
+    /*display: block;*/
+}
+.hover_model a{
+    text-transform: uppercase;
+    color: #0000ff;
+}
+.top_part, .btm_part{
+    padding-top: 20px;
+    text-align: center;
+}
+.btm_part{
+    padding-top: 50px;
 }

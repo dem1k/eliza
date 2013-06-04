@@ -7,7 +7,7 @@
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
- * @license		http://codeigniter.com/user_guide/license.html
+ * @license		httXXXXXlicense.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
  * @filesource

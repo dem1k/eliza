@@ -49,6 +49,7 @@ $route['scaffolding_trigger'] = '';
 //$route['contacts'] = 'client/map/index';
 $route['product/:num'] = 'client/product/index';
 $route['category'] = 'client/category/products';
+$route['category/([a-zA-Z-=+]+)'] = 'client/category/index';
 $route['category/(\d+)?'] = 'client/category/products/$1';
 $route['category/new'] = 'client/category';
 $route['search'] = 'client/product/search';

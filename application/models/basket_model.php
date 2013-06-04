@@ -71,7 +71,6 @@ class Basket_model extends CI_Model
         products.name as product_name,
         products.artikul as artikul,
         products.image_big as image_big,
-        products.image_small as image_small,
         users.username as username,
         users.email as email,
         meta.phone as phone,

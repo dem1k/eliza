@@ -6,6 +6,8 @@ class Pages extends CI_Controller {
     function __construct(){
         parent::__construct();
         $this->data['seo'] = $this->seo_model->getSeo();
+        $this->data['categories'] = $this->category_model->getAll();
+
     }
     function index() {
         $this->data['template']='/client/main/index';
@@ -14,10 +16,9 @@ class Pages extends CI_Controller {
             $article[$cat['name']]=$this->article_model->getByCatId($cat['id']);
         }
 
-        $this->data['articles_f']=$article;
-        $this->data['products_fav']=$this->product_model->getAll();
-        $this->data['baner']=$this->baner_model->getAll();
-//        var_dump($this->data['baner']);die;
+//        $this->data['articles_f']=$article;
+        $this->data['products']=$this->product_model->getAll();
+//        die(var_dump($this->data));
         $this->load->view('/client/main',$this->data);
     }
 
