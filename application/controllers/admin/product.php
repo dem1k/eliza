@@ -2,7 +2,7 @@
 
 class Product extends CI_Controller
 {
-     function __construct()
+    function __construct()
     {
         parent::__construct();
         $this->data['res'] = 'Product';
@@ -19,7 +19,7 @@ class Product extends CI_Controller
         $page = $this->input->get('page') ? $this->input->get('page') : $this->uri->segment(4, 1);
         $per_page = $this->input->get('per_page') ? $this->input->get('per_page') : $this->uri->segment(5, 20);
         $conditions['search'] = $this->input->get('search');
-        $this->data['product'] = $this->product_model->getAll($conditions, $filetrs = array(), $page, $per_page,false);
+        $this->data['product'] = $this->product_model->getAll($conditions, $filetrs = array(), $page, $per_page, false);
         $total_rows = $this->product_model->countAll($conditions, $filetrs);
         $total_pages = round($total_rows / $per_page);
         $this->load->library('My_pages');
@@ -243,7 +243,7 @@ class Product extends CI_Controller
 
 // Create target dir
         if (!file_exists($targetDir))
-            @mkdir($targetDir,0777);
+            @mkdir($targetDir, 0777);
 
 // Remove old temp files
         /* if ($cleanupTargetDir) {
@@ -325,6 +325,45 @@ class Product extends CI_Controller
 
     }
 
+    function from_file()
+    {
+        try {
+
+            //load our new PHPExcel library
+            $this->load->library('excel');
+
+            //activate worksheet number 1
+            $this->excel->setActiveSheetIndex(0);
+//            die(var_dump(scandir(__DIR__.'/../../../assets')));
+            $objPHPExcel = PHPExcel_IOFactory::load(__DIR__.'/../../../assets/losini.xls');
+            $objPHPExcel->setActiveSheetIndex(0);
+            $aSheet = $objPHPExcel->getActiveSheet();
+            $myprodArr = array();
+            foreach ($aSheet->getRowIterator() as $row) {
+                $cellIterator = $row->getCellIterator();
+                $myRow = array();
+                foreach ($cellIterator as $cell) {
+                    $myRow[] = $cell->getValue();
+                }
+                $myprodArr[] = $myRow;
+            }
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            var_dump($e->getTraceAsString());
+        }
+        foreach($myprodArr as $prod){
+            preg_match("`^(\".*\")(.*)(\(.*\))$`",$prod[0],$res);
+            $data[] = array(
+                'brand' =>$res[1],
+                'name' =>$res[2],
+                'artikul' =>$res[3],
+                'description'=>$prod[0],
+
+            );
+        }
+        var_dump($data);
+    }
+
     function _remap($method)
     {
         if (!$this->ion_auth->logged_in()) {
@@ -332,4 +371,5 @@ class Product extends CI_Controller
         }
         $this->$method();
     }
+
 }
