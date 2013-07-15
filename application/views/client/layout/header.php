@@ -25,7 +25,7 @@
     <!--header -->
     <header>
         <div class="wrapper">
-            <h1><a href="index.html" id="logo">AirLines</a></h1>
+            <h1><a href="<?php echo base_url()?>" id="logo">AirLines</a></h1>
             <span id="slogan">Мужская, женская и детская одежда оптом</span>
             <div id="top_nav">
                 <ul>

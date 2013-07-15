@@ -17,13 +17,13 @@
 </footer>
 <!--footer end-->
 </div>
-<script type="text/javascript">Cufon.now();</script>
+<script type="text/javascript">//Cufon.now();</script>
 <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        $('#form_4').jqTransform({
-            imgPath: '/assets/js/jqtransformplugin/img/'
-        });
-    });
+//    jQuery(document).ready(function ($) {
+//        $('#form_4').jqTransform({
+//            imgPath: '/assets/js/jqtransformplugin/img/'
+//        });
+//    });
 </script>
 </body>
 </html>

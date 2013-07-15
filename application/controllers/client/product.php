@@ -9,6 +9,7 @@ class Product extends CI_Controller
     {
         parent::__construct();
         $this->data['seo'] = $this->seo_model->getSeo();
+        $this->data['categories'] = $this->category_model->getAll();
     }
 
     function index()
@@ -17,7 +18,7 @@ class Product extends CI_Controller
         if (!empty($id)) {
             $this->data['id'] = $id;
             $this->data['title'] = 'Elizabeth Plus';
-            $this->data['template'] = 'client/product/index';
+            $this->data['template'] = 'client/product/index_new';
             $this->data['prod'] = $product = $this->product_model->getById($id);
             $this->load->model('images_model');
             $this->data['images'] = $this->images_model->getByProductId($id);

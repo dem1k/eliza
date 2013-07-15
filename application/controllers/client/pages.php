@@ -10,7 +10,7 @@ class Pages extends CI_Controller {
 
     }
     function index() {
-        $this->data['template']='/client/main/index';
+        $this->data['template']='/client/main/index_new';
         $articles_cats=$this->category_art_model->getAll();
         foreach ($articles_cats as $cat) {
             $article[$cat['name']]=$this->article_model->getByCatId($cat['id']);
